@@ -1,15 +1,16 @@
 menuList:
-  - name: Accueil
+  - name: 
     slug: /
 
-  - name: Actualités
+  - name: 
     slug: /actualites
 
-  - name: Référent
+  - name: 
     slug: /onboarding
 
-  - name: Statistiques
+  - name: 
     slug: /stats
 
-contact: Contact
-contact_mailto: contact-test@gmail.com
+contact: Nous contacter
+contact_mailto: contact-nos1000jours@fabrique.social.gouv.fr 
+

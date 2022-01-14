@@ -1,31 +1,51 @@
 display: true
-title: Notre actualité
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+title: Découvrir nos outils
+description: Que vous soyiez un professionnel de santé ou détenteur d'un site grand public sur la parentalité ou l'enfance, nos produits peuvent vous intéresser
 #importer les images dans public/assets/imgs/articles (de la même taille si possible)
 articles:
-  - title: titre 1
-    category: catégorie A
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-    image: hanguy.jpg
-    title_content: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Vous êtes propriétaire d'un site public ou privé
+    category: Widget
+    description: Aidez les parents à se questionner sur leur état émotionnel et à identifier s'ils souffrent d'une dépression post-partum.
+    image: Site-CPAM.svg
+    title_content: Un widget qui s'adapte à votre site internet pour proposer le passage du test EPDS aux parents
     content: >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit
-    slug: article-1
+      Une fois ajouté à votre site internet par votre équipe de développement en quelques minutes, le widget permet aux parents se connectant à votre site de bénéficier du test EPDS.
+      En 10 questions, 5 minutes, vos visiteurs peuvent avoir un aperçu de leur état émotionnel actuel.
+      
 
-  - title: titre 2
-    category: catégorie B
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-    image: hanguy.jpg
-    title_content: Lorem ipsum
-    content: >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit
-    slug: article-2
+      Le widget embarque aussi la possibilité pour les visiteurs de bénéficier du support moral de notre partenaire experte en soutien à la parentalité et de ses capacités d’orientation vers des professionnels de santé proches de leurs domiciles.
+      
 
-  - title: titre 3
-    category: catégorie C
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-    image: hanguy.jpg
-    title_content: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+      Non seulement vos visiteurs peuvent comprendre rapidement s'ils souffrent, ils peuvent aussi obtenir une écoute immmédiate.
+      Ce service, proposé par le ministère de la santé, est gratuit.
+
+
+      Pour mettre en place le widget sur votre site internet, contactez nous à l'adresse mail suivante : contact-nos1000jours@fabrique.social.gouv.fr
+
+
+
+    slug: EPDS-site-partenaire
+
+  - title: Vous êtes professionnel de santé
+    category: EPDS-pro
+    description: Faites passer plus facilement vos tests EPDS à vos patient(e)s directement depuis un téléphone mobile ou un ordinateur portable. Consultez et partagez les résultats en deux clics.
+    image: Maquette EPDS PRO.png
+    title_content: Test EPDS en ligne pour professionnels de santé
     content: >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit
-    slug: article-3
+      Le service dématérialisé vous permet de gagner du temps au remplissage du test.
+
+
+      Chaque score est calculé automatiquement et une synthèse des résultats en version pdf vous est partagée par email.
+
+
+      Le service vous permet aussi de proposer de passer le test dans des langues étrangères.
+
+
+      Contactez nous pour une démonstration à l'adresse mail suivante : contact-nos1000jours@fabrique.social.gouv.fr
+
+
+  
+
+
+    slug: EPDS-pro
+

@@ -3,17 +3,14 @@ home:
   title: Les stats
   #Placer les icones dans le dossier public/assets/imgs/icons
   kpis:
-    - title: KPI 1
-      value: 1000
-      icon_name: trending-up.svg
+    - title: tests EPDS passés, tout confondu
+      value: 374
+      icon_name: icone-EPDS.svg
 
-    - title: KPI 2
-      value: 2000
-      icon_name: target.svg
+    - title: parents orientés, tout confondu
+      value: 258
+      icon_name: icone-parents.svg
 
-    - title: KPI 3
-      value: 3000
-      icon_name: award.svg
 page:
   title: Statistiques
   chartWidth: 700
