@@ -1,0 +1,29 @@
+.breadcrumbs {
+  ol {
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+  ol li {
+    list-style: none;
+    padding-right: 10px;
+
+    ol li a:after {
+      content: ">";
+      color: black;
+      font-size: 50px;
+      display: block;
+    }
+  }
+  ol li a {
+    color: var(--lightgray);
+    text-transform: capitalize;
+    font-size: 12px;
+  }
+  .breadcrumbs-active a {
+    color: var(--primary);
+  }
+  li:not(.breadcrumbs-active) {
+    text-decoration: underline;
+  }
+}

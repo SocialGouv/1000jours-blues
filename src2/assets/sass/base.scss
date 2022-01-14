@@ -1,0 +1,13 @@
+@font-face {
+  font-weight: 400;
+  font-family: "Marianne";
+  src: url("../fonts/Marianne-Regular.otf") format("truetype");
+}
+body {
+  font-family: Marianne;
+  font-size: 16px;
+  color: var(--primary);
+}
+html {
+  scroll-behavior: smooth;
+}
