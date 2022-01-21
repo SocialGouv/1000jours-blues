@@ -1,6 +1,7 @@
 {
-  "name": "1000jours-blues",
+  "project": "nos1000jours",
+  "name": "nos1000jours-blues",
+  "subdomain": "1000jours-blues",
   "type": "app",
-  "registry": "ghcr",
-  "project": "nos1000jours"
+  "registry": "ghcr"
 }
