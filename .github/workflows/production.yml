@@ -10,7 +10,6 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-
   deploy:
     name: Deploy production
     runs-on: ubuntu-latest
@@ -18,21 +17,20 @@ jobs:
       name: production
       url: ${{ steps.autodevops.outputs.url }}
     steps:
+      - name: Get project name
+        run: |
+          echo "project=${GITHUB_REPOSITORY#*/}" >> $GITHUB_ENV
 
-    - name: Get project name
-      run: |
-        echo "project=${GITHUB_REPOSITORY#*/}" >> $GITHUB_ENV
-
-    - name: Use autodevops to deploy production
-      uses: SocialGouv/actions/autodevops@v1
-      id: autodevops
-      with:
-        environment: prod
-        project: ${{ env.project }}
-        imageName: ${{ env.project }}/1000jours-blues
-        token: ${{ secrets.GITHUB_TOKEN }}
-        kubeconfig: ${{ secrets.KUBECONFIG }}
-        rancherId: ${{ secrets.RANCHER_PROJECT_ID }}
-        socialgouvBaseDomain: ${{ secrets.SOCIALGOUV_BASE_DOMAIN }}
-        dockerbuildargs: |
-          NEXT_PUBLIC_INSTAGRAM_TOKEN=instagram_token_prod
+      - name: Use autodevops to deploy production
+        uses: SocialGouv/actions/autodevops@v1
+        id: autodevops
+        with:
+          environment: prod
+          project: ${{ env.project }}
+          imageName: ${{ env.project }}/1000jours-blues
+          token: ${{ secrets.GITHUB_TOKEN }}
+          kubeconfig: ${{ secrets.KUBECONFIG }}
+          rancherId: ${{ secrets.RANCHER_PROJECT_ID }}
+          socialgouvBaseDomain: ${{ secrets.SOCIALGOUV_BASE_DOMAIN }}
+          dockerbuildargs: |
+            NEXT_PUBLIC_INSTAGRAM_TOKEN=instagram_token_prod

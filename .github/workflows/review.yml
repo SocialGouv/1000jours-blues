@@ -12,25 +12,23 @@ concurrency:
   group: review-${{ github.ref }}
 
 jobs:
-
   deploy:
     name: Deploy review branch
     runs-on: ubuntu-latest
     steps:
+      - name: Get project name
+        run: |
+          echo "project=${GITHUB_REPOSITORY#*/}" >> $GITHUB_ENV
 
-    - name: Get project name
-      run: |
-        echo "project=${GITHUB_REPOSITORY#*/}" >> $GITHUB_ENV
-
-    - name: Use autodevops to deploy review branch
-      uses: SocialGouv/actions/autodevops@submodules
-      with:
-        environment: dev
-        project: ${{ env.project }}
-        imageName: ${{ env.project }}/1000jours-blues
-        token: ${{ secrets.GITHUB_TOKEN }}
-        kubeconfig: ${{ secrets.KUBECONFIG }}
-        rancherId: ${{ secrets.RANCHER_PROJECT_ID }}
-        socialgouvBaseDomain: ${{ secrets.SOCIALGOUV_BASE_DOMAIN }}
-        dockerbuildargs: |
-          NEXT_PUBLIC_INSTAGRAM_TOKEN=instagram_token_dev
+      - name: Use autodevops to deploy review branch
+        uses: SocialGouv/actions/autodevops@v1
+        with:
+          environment: dev
+          project: ${{ env.project }}
+          imageName: ${{ env.project }}/1000jours-blues
+          token: ${{ secrets.GITHUB_TOKEN }}
+          kubeconfig: ${{ secrets.KUBECONFIG }}
+          rancherId: ${{ secrets.RANCHER_PROJECT_ID }}
+          socialgouvBaseDomain: ${{ secrets.SOCIALGOUV_BASE_DOMAIN }}
+          dockerbuildargs: |
+            NEXT_PUBLIC_INSTAGRAM_TOKEN=instagram_token_dev
