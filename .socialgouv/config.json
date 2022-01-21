@@ -1,7 +1,6 @@
 {
-  "name": "www",
-  "type": "app",
+  "name": "1000jours-blues",
+  "type": "static",
   "registry": "ghcr",
-  "project": "landing-template",
-  "subdomain": "landing-template"
+  "project": "nos1000jours"
 }
