@@ -1,6 +1,6 @@
 {
   "name": "1000jours-blues",
-  "type": "static",
+  "type": "app",
   "registry": "ghcr",
   "project": "nos1000jours"
 }
