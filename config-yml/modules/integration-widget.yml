@@ -1,0 +1,11 @@
+title: Intégration du widget EPDS
+description: L’équipe de 1000jours Blues vous propose d’intégrer son questionnaire EPDS sur votre site grâce à un module (widget).
+
+iframe:
+  title: iframe
+  source_required: Afin de pouvoir utiliser le widget, vous devez vous rapprocher de notre équipe afin qu'elle vous fournisse un code à intégrer dans l'url de l'iframe (qui remplacera "monsiteweb" ci-desous).
+  description: Avec l’iframe, il suffit d’ajouter le code suivant à l’endroit où vous souhaitez voir apparaître le module.
+  custom: C’est à vous de décider des dimensions que prendra le module. Pour un affichage optimal, nous vous conseillons de garder les dimensions présentent dans le code fourni.
+
+contact: En cas de difficulté, nous vous invitons à nous contacter à l’adresse suivante
+email_contact: codedutravailnumerique@travail.gouv.fr
