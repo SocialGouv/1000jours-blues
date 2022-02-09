@@ -23,6 +23,9 @@ function IntegrationWidget() {
     height = "600px"
   ></iframe >`;
 
+  const widgetUrl =
+    "https://nos1000jours-blues-epds-widget.fabrique.social.gouv.fr?source=1000jblues-integration";
+
   return (
     <Row>
       <Col className="no-gutters">
@@ -34,7 +37,7 @@ function IntegrationWidget() {
 
         <iframe
           title="Widget EPDS"
-          src="https://nos1000jours-blues-epds-widget-preprod.dev.fabrique.social.gouv.fr?source=1000jblues-integration"
+          src={widgetUrl}
           width="100%"
           height="600px"
           style={{ border: "1px solid gray" }}
@@ -71,14 +74,14 @@ function IntegrationWidget() {
         <div style={{ display: "flex", justifyContent: "space-around" }}>
           <iframe
             title="Widget EPDS moyen"
-            src="https://nos1000jours-blues-epds-widget-preprod.dev.fabrique.social.gouv.fr?source=1000jblues-integration"
+            src={widgetUrl}
             width="550px"
             height="550px"
             style={{ border: "1px solid gray" }}
           />
           <iframe
             title="Widget EPDS petit"
-            src="https://nos1000jours-blues-epds-widget-preprod.dev.fabrique.social.gouv.fr?source=1000jblues-integration"
+            src={widgetUrl}
             width="auto"
             height="400px"
             style={{ border: "1px solid gray" }}
