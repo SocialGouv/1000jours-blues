@@ -7,5 +7,9 @@ iframe:
   description: Avec l’iframe, il suffit d’ajouter le code suivant à l’endroit où vous souhaitez voir apparaître le module.
   custom: C’est à vous de décider des dimensions que prendra le module. Pour un affichage optimal, nous vous conseillons de garder les dimensions présentent dans le code fourni.
 
+mosaique: 
+  title: Aperçu 
+  description: Voici un petit aperçu du widget sous différentes tailles
+
 contact: En cas de difficulté, nous vous invitons à nous contacter à l’adresse suivante
-email_contact: codedutravailnumerique@travail.gouv.fr
+email_contact: contact-nos1000jours@fabrique.social.gouv.fr

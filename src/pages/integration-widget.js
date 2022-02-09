@@ -33,17 +33,17 @@ function IntegrationWidget() {
         </div>
 
         <iframe
-          src="https://nos1000jours-blues-epds-widget-preprod.dev.fabrique.social.gouv.fr?source=test"
+          title="Widget EPDS"
+          src="https://nos1000jours-blues-epds-widget-preprod.dev.fabrique.social.gouv.fr?source=1000jblues-integration"
           width="100%"
           height="600px"
           style={{ border: "1px solid gray" }}
-        ></iframe>
+        />
 
         <Col md={{ offset: 2, span: 8 }}>
           <div className="font-weight-bold pb-5" style={{ fontSize: "32px" }}>
             {Labels.iframe.title}
           </div>
-
           <p className="content-article" style={{ whiteSpace: "pre-wrap" }}>
             {Labels.iframe.description}
             <br />
@@ -59,7 +59,34 @@ function IntegrationWidget() {
             />
             <br />
             {Labels.iframe.custom}
-            <br />
+          </p>
+
+          <div className="font-weight-bold pb-5" style={{ fontSize: "32px" }}>
+            {Labels.mosaique.title}
+          </div>
+          <p className="content-article" style={{ whiteSpace: "pre-wrap" }}>
+            {Labels.mosaique.description}
+          </p>
+        </Col>
+        <div style={{ display: "flex", justifyContent: "space-around" }}>
+          <iframe
+            title="Widget EPDS moyen"
+            src="https://nos1000jours-blues-epds-widget-preprod.dev.fabrique.social.gouv.fr?source=1000jblues-integration"
+            width="550px"
+            height="550px"
+            style={{ border: "1px solid gray" }}
+          />
+          <iframe
+            title="Widget EPDS petit"
+            src="https://nos1000jours-blues-epds-widget-preprod.dev.fabrique.social.gouv.fr?source=1000jblues-integration"
+            width="auto"
+            height="400px"
+            style={{ border: "1px solid gray" }}
+          />
+        </div>
+
+        <Col md={{ offset: 2, span: 8 }}>
+          <p className="content-article" style={{ whiteSpace: "pre-wrap" }}>
             <br />
             {Labels.contact} : {Labels.email_contact}
           </p>
