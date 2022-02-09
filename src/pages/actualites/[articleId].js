@@ -21,6 +21,9 @@ function Article() {
   const articleId = router.query.articleId;
   const [singleArticle, setSingleArticle] = useState({});
 
+  const widgetUrl =
+    "https://nos1000jours-blues-epds-widget.fabrique.social.gouv.fr?source=1000jblues-landing";
+
   const getSingleArticle = () => {
     setSingleArticle(
       articles.articles.find((article) => article.slug === articleId)
@@ -56,6 +59,16 @@ function Article() {
             <p className="content-article" style={{ whiteSpace: "pre-wrap" }}>
               {singleArticle.content}
             </p>
+
+            {articleId == "EPDS-site-partenaire" ? (
+              <iframe
+                title="Widget EPDS"
+                src={widgetUrl}
+                width="100%"
+                height="640px"
+                style={{ border: "1px solid gray" }}
+              />
+            ) : null}
             <a
               href={singleArticle.button_url}
               target="_blank"
