@@ -51,14 +51,19 @@ function Article() {
           />
           <Col md={{ offset: 2, span: 8 }}>
             <div className="font-weight-bold pb-5" style={{ fontSize: "32px" }}>
-              {singleArticle.title_content && singleArticle.title_content}
+              {singleArticle.title_content}
             </div>
             <p className="content-article" style={{ whiteSpace: "pre-wrap" }}>
-              {singleArticle.content && singleArticle.content}
+              {singleArticle.content}
             </p>
-            <a href="https://nos1000jours-web-pro.fabrique.social.gouv.fr/" target="_blank" className="blue-btn mb-5 btn btn-primary">
-              Utiliser l'outil dès maintenant
-              </a>
+            <a
+              href={singleArticle.button_url}
+              target="_blank"
+              rel="noreferrer"
+              className="blue-btn mb-5 btn btn-primary"
+            >
+              {singleArticle.button_text}
+            </a>
           </Col>
         </Col>
       )}
