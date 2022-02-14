@@ -1,23 +1,38 @@
-title: À propos
+title: Mentions légales
 
 legalNotice:
   - title: Éditeur
     content: |
-      Incubateur de services numériques de la Direction interministérielle du numérique (DINUM) - 20, avenue de Ségur - 75007 Paris.
+      Ce site est édité par la Direction générale de la Cohésion sociale au sein de la Fabrique numérique des ministères sociaux :
 
-  - title: Directeur de la publication
-    content: |
-      Directeur interministériel du numérique
+      18 place des 5-Martyrs-du-Lycée-Buffon
+      75014 Paris
 
-  - title: Directeur de la publication
+  - title: Directrice de la publication
     content: |
-      Directeur interministériel du numérique
+      Madame Virginie LASSERRE, Directrice générale de la cohésion sociale
 
-  - title: Copyright
+  - title: Hébergement de l’application
     content: |
-      Illustrations de la section équipe en page d’accueil : Freepik Toute autre illustration : tumeplay.fr
+      Ce site est hébergé par :
+      Microsoft Azure
+      39 quai du président Roosevelt
+      92130 Issy les Moulineaux
 
-  - title: Plus d’infos ?
+  - title: Accessibilité
     content: |
-      L’équipe Tumeplay peut être
-      contactée directement à contact@tumeplay.fr
+      La conformité aux normes d’accessibilité numérique est un objectif ultérieur mais nous tâchons de rendre ce site accessible à toutes et à tous.
+
+  - title: Signaler un dysfonctionnement
+    content: |
+      Si vous rencontrez un défaut d’accessibilité vous empêchant d’accéder à un contenu ou une fonctionnalité du site, merci de nous en faire part.
+
+      Si vous n’obtenez pas de réponse rapide de notre part, vous êtes en droit de faire parvenir vos doléances ou une demande de saisine au Défenseur des droits.
+
+      En savoir plus 
+      Pour en savoir plus sur la politique d’accessibilité numérique de l’État : http://references.modernisation.gouv.fr/accessibilite-numerique
+
+  - title: Sécurité
+    content: |
+      L’application est protégée par un certificat électronique, matérialisé pour la grande majorité des navigateurs par un cadenas. Cette protection participe à la confidentialité des échanges.
+      En aucun cas les services associés à la plateforme ne seront à l’origine d’envoi de courriels pour demander la saisie d’informations personnelles.
