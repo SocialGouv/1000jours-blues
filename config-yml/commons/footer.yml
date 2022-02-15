@@ -1,31 +1,23 @@
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-menuList:
-  - name: google.fr
-    url: https://google.fr/
+liensGouv:
+  - name: legifrance.gouv.fr
+    url: https://legifrance.gouv.fr
 
-#importer les images dans public/assets/imgs/sponsors
-principalSponsor:
-  - image: logo fabrique.png
-    url: https://www.fabrique.social.gouv.fr/
+  - name: gouvernement.fr
+    url: https://gouvernement.fr
 
-sponsors:
-  - image: Logo ARSNA.png
-    url: https://www.nouvelle-aquitaine.ars.sante.fr/
+  - name: service-public.fr
+    url: https://service-public.fr
 
-  - image: logo ARSIDF.jpeg
-    url: https://www.iledefrance.ars.sante.fr/
-
-  - image: logo-arsguy.jpeg
-    url: https://www.guyane.ars.sante.fr/
+  - name: data.gouv.fr
+    url: "https://data.gouv.fr"
 
 bottomMenuList:
   - name: Mentions légales
     slug: mentions-legales
 
-  - name: Données personnelles et cookies
-    slug: donnees-personnelles
+  - name: Politique de confidentialité
+    slug: politique-confidentialite
 
-  - name: Accessibilité
-    slug: accessibilite
-
-copyright: © République Française 2021
+laFabrique: La Fabrique Numérique des Ministères Sociaux
+republiqueFrancaise: République Française
+licence: Sauf mention contraire, tous les textes de ce site sont sous
