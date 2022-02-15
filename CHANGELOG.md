@@ -1,3 +1,14 @@
+# [1.1.0](https://github.com/SocialGouv/1000jours-blues/compare/v1.0.0...v1.1.0) (2022-02-15)
+
+
+### Features
+
+* **widget:** ajout le widget sur la landing page ([105d4ad](https://github.com/SocialGouv/1000jours-blues/commit/105d4ad5a46f5439f304569550a9d543076a2905))
+* **widget:** apercu ([aefc3de](https://github.com/SocialGouv/1000jours-blues/commit/aefc3de909455a881d7aa5d935391f0701132106))
+* **widget:** branchement sur le bouton ([77d5c3d](https://github.com/SocialGouv/1000jours-blues/commit/77d5c3d972378a85e3059ef6a63a8cec9cbc1ab2))
+* **widget:** explication pour l'integration ([ca4936e](https://github.com/SocialGouv/1000jours-blues/commit/ca4936ead686111332b1169c090fd72d150178a0))
+* **widget:** refacto url ([fc945cd](https://github.com/SocialGouv/1000jours-blues/commit/fc945cda567ce2da7368e34afb231149c94582ea))
+
 # 1.0.0 (2022-01-21)
 
 
