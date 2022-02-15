@@ -22,3 +22,7 @@ html {
 [target=_blank]:after {
   content: none !important;
 }
+
+ol>li::marker {
+  content: none !important;
+}
