@@ -128,10 +128,10 @@ function PolitiqueConfidentialite() {
             className="w-100 no-gutters justify-content-between align-items-center pb-5"
           >
             <h2>{notice.title}</h2>
-            <p style={{ whiteSpace: "pre-wrap" }}>
+            <div style={{ whiteSpace: "pre-wrap" }}>
               {notice.content}
               {showTabByName(notice.table_name)}
-            </p>
+            </div>
           </Col>
         ))}
       </Col>

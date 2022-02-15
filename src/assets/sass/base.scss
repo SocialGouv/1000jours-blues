@@ -11,3 +11,14 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+/*****
+* Corrections après l'import du design system de l'état (@dataesr/react-dsfr)
+*****/
+[href] {
+  box-shadow: none !important;
+}
+
+[target=_blank]:after {
+  content: none !important;
+}

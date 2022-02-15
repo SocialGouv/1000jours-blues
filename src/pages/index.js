@@ -1,6 +1,5 @@
-import Link from "next/link";
 import React from "react";
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import Slider from "react-slick";
 
 import header from "../../config-yml/commons/header.yml";
@@ -69,7 +68,7 @@ function Statistic() {
         <Col
           xs={0}
           xl={{ offset: 1, span: 11 }}
-          className="d-flex justify-content-between w-100 align-items-center flex-wrap"
+          className="d-flex justify-content-around w-100 align-items-center flex-wrap"
         >
           {stats.kpis.map((stat, index) => (
             <Col xl={4} md={3} key={index} className="mb-4 mb-md-0">
@@ -205,7 +204,7 @@ export async function getServerSideProps() {
   if (token) {
     const res = await fetch(
       "https://graph.instagram.com/me/media?fields=id,username,permalink,media_url,thumbnail_url,media_type&access_token=" +
-        token
+      token
     );
     getData = await res.json();
   }
