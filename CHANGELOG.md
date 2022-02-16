@@ -1,3 +1,23 @@
+# [1.2.0](https://github.com/SocialGouv/1000jours-blues/compare/v1.1.0...v1.2.0) (2022-02-16)
+
+
+### Bug Fixes
+
+* lib ([422187c](https://github.com/SocialGouv/1000jours-blues/commit/422187c024f9426c254e53e9c071cc13dc851234))
+
+
+### Features
+
+* maj logo ([4bfca6d](https://github.com/SocialGouv/1000jours-blues/commit/4bfca6dd0a30d3f41d9f2c5b66ea808a78e870a2))
+* maj style ([89cb035](https://github.com/SocialGouv/1000jours-blues/commit/89cb03505322923719eebd48a965adacea6b2631))
+* mentions légales ([6d40538](https://github.com/SocialGouv/1000jours-blues/commit/6d4053860bc5bb0315b469d20a276d61cf27b6a1))
+* modifications footer ([ff04fe3](https://github.com/SocialGouv/1000jours-blues/commit/ff04fe3ed55978498af3ee1978c70c721fcd3ba8))
+* politique de confidentialités ([115ee2e](https://github.com/SocialGouv/1000jours-blues/commit/115ee2ed60141948248f5172fefa88fd32ad4154))
+* redirection bouton ([639060e](https://github.com/SocialGouv/1000jours-blues/commit/639060e4bc8fa3d7b2122aaff650fafe1119b1e7))
+* renommer bouton ([f24d91c](https://github.com/SocialGouv/1000jours-blues/commit/f24d91cdf250d49178fe0c75be5fa390f8976b9f))
+* style fil d'ariane ([ace589a](https://github.com/SocialGouv/1000jours-blues/commit/ace589a881349453885f83521be1db4c5a17bd99))
+* suppression fichiers ([00e8c03](https://github.com/SocialGouv/1000jours-blues/commit/00e8c0367d376ef61d59da43cf94013dcad9b24e))
+
 # [1.1.0](https://github.com/SocialGouv/1000jours-blues/compare/v1.0.0...v1.1.0) (2022-02-15)
 
 
