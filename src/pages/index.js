@@ -118,6 +118,7 @@ function SamplePrevArrow(props) {
     />
   );
 }
+
 function Articles() {
   const settings = {
     infinite: true,
@@ -128,7 +129,8 @@ function Articles() {
         breakpoint: 1024,
         settings: {
           arrows: false,
-          slidesToShow: articles.articles.length < 3 ? articles.articles.length : 3,
+          slidesToShow:
+            articles.articles.length < 3 ? articles.articles.length : 3,
         },
       },
       {
