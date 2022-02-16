@@ -6,12 +6,16 @@ import { Row } from "react-bootstrap";
 export function Breadcrumb() {
   const router = useRouter();
   return (
-    <Row className="align-items-end no-gutters">
+    <Row
+      className="align-items-end no-gutters"
+      style={{ lineHeight: "0.8rem" }}
+    >
       {router.pathname !== "/" && (
         <>
           <img
             src="/assets/imgs/icons/arrow-right.svg"
             onClick={() => router.back()}
+            onKeyDown={() => router.back()}
             alt="arrow-icon.svg"
             style={{ transform: "rotate(-180deg)", cursor: "pointer" }}
           />

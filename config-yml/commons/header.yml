@@ -2,7 +2,7 @@ mainTitle: 1000 jours - Blues
 
 subtitle: Participer au dépistage de la dépression post-partum pour briser l'isolement des jeunes parents en utilisant les outils 1000J - Blues.
 
-app_access_link: http://www.google.fr/
+app_access_link: /#actualites
 
 #importer les images dans public/assets/imgs/header (idem pour le qrcode)
 image_prototype_name: visuel_EPDS-header.png
