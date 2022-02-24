@@ -21,7 +21,7 @@ jobs:
           echo "project=${GITHUB_REPOSITORY#*/}" >> $GITHUB_ENV
 
       - name: Use autodevops to deploy review branch
-        uses: SocialGouv/actions/autodevops-helm@refacto-j
+        uses: SocialGouv/actions/autodevops-helm@v1
         with:
           environment: dev
           token: ${{ secrets.GITHUB_TOKEN }}
