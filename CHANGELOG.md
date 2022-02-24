@@ -1,3 +1,14 @@
+## [1.2.1](https://github.com/SocialGouv/1000jours-blues/compare/v1.2.0...v1.2.1) (2022-02-24)
+
+
+### Bug Fixes
+
+* **ci:** autodevops-helm ([1a03215](https://github.com/SocialGouv/1000jours-blues/commit/1a03215b784ded6dd1f1d382a4084421b07ae5ac))
+* **ci:** autodevops-helm ([68f653c](https://github.com/SocialGouv/1000jours-blues/commit/68f653cbd9b987a5587a079030f7f1f18e481336))
+* **ci:** autodevops-helm ([9f165a7](https://github.com/SocialGouv/1000jours-blues/commit/9f165a79fd9244ab022fed48246398b293bb54d6))
+* **ci:** autodevops-helm ([80caf9a](https://github.com/SocialGouv/1000jours-blues/commit/80caf9a93c8e0525448a9e011f8a9eac0204305e))
+* **ci:** autodevops-helm ([9ca621a](https://github.com/SocialGouv/1000jours-blues/commit/9ca621af8ea3643d42cef1052cb50daa25b9bc9f))
+
 # [1.2.0](https://github.com/SocialGouv/1000jours-blues/compare/v1.1.0...v1.2.0) (2022-02-16)
 
 
