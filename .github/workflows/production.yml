@@ -22,11 +22,10 @@ jobs:
           echo "project=${GITHUB_REPOSITORY#*/}" >> $GITHUB_ENV
 
       - name: Use autodevops to deploy production
-        uses: SocialGouv/actions/autodevops-helm@v1
+        uses: SocialGouv/actions/autodevops-helm@refacto-j
         id: autodevops
         with:
           environment: prod
-          project: nos1000jours
           imageName: nos1000jours/nos1000jours-blues
           token: ${{ secrets.GITHUB_TOKEN }}
           kubeconfig: ${{ secrets.KUBECONFIG }}
@@ -34,4 +33,3 @@ jobs:
           socialgouvBaseDomain: ${{ secrets.SOCIALGOUV_BASE_DOMAIN }}
           dockerbuildargs: |
             NEXT_PUBLIC_INSTAGRAM_TOKEN=instagram_token_prod
-          productionHost: 1000jours-blues.fabrique.social.gouv.fr
