@@ -3,6 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import Slider from "react-slick";
 
 import header from "../../config-yml/commons/header.yml";
+import partners from "../../config-yml/modules/partners.yml";
 import articles from "../../config-yml/modules/articles.yml";
 import instagram from "../../config-yml/modules/instagram.yml";
 import newsletter from "../../config-yml/modules/newsletter.yml";
@@ -29,6 +30,9 @@ export default function index({ posts }) {
       <br />
       <br />
       <Statistic />
+      <br />
+      <br />
+      <Partners />
       <br />
       <br />
       <News />
@@ -82,6 +86,31 @@ function Statistic() {
         </Col>
       </Row>
     )
+  );
+}
+
+function Partners() {
+  return (
+    <Row className="d-flex flex-column pb-5 no-gutters">
+      <Col>
+        <h2>{partners.title}</h2>
+        <div className="py-3 description">{partners.description}</div>
+      </Col>
+      <Col
+        xs={0}
+        xl={{ offset: 1, span: 11 }}
+        className="d-flex justify-content-around w-100 align-items-center flex-wrap">
+        {partners.list.map((partner, index) => (
+          <Col key={index}>
+            <img
+              width="100%"
+              src={"../assets/imgs/partners/" + partner.image}
+              alt="header-phone"
+            />
+          </Col>
+        ))}
+      </Col>
+    </Row>
   );
 }
 
