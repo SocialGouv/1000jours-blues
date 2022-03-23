@@ -1,0 +1,16 @@
+display: true
+title: Nos partenaires
+description: Ils ont déjà intégré le widget
+#Placer les icones dans le dossier public/assets/imgs/icons
+list:
+  - title: parents.fr
+    image: parents.png
+
+  - title: les pros de la petite enfance
+    image: pros-petite-enfance.png
+  
+  - title: Oréhane
+    image: orehane.jpeg
+  
+  - title: Le site 1000 premiers jours
+    image: 1000-premiers-jours.png
