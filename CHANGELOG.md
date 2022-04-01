@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/SocialGouv/1000jours-blues/compare/v1.3.0...v1.4.0) (2022-04-01)
+
+
+### Features
+
+* **matomo:** ajout id ([9bbd0e5](https://github.com/SocialGouv/1000jours-blues/commit/9bbd0e52154c7208e4d3ba35a35b07e34ac4bcde))
+
 # [1.3.0](https://github.com/SocialGouv/1000jours-blues/compare/v1.2.2...v1.3.0) (2022-03-23)
 
 
