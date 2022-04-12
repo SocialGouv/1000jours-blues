@@ -1,3 +1,10 @@
+## [1.4.2](https://github.com/SocialGouv/1000jours-blues/compare/v1.4.1...v1.4.2) (2022-04-12)
+
+
+### Bug Fixes
+
+* prod SSL ([d7437bc](https://github.com/SocialGouv/1000jours-blues/commit/d7437bc1ba8940a72fc39f5c760130b447d12055))
+
 ## [1.4.1](https://github.com/SocialGouv/1000jours-blues/compare/v1.4.0...v1.4.1) (2022-04-12)
 
 
