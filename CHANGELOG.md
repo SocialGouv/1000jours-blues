@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/SocialGouv/1000jours-blues/compare/v1.4.0...v1.4.1) (2022-04-12)
+
+
+### Bug Fixes
+
+* use kube-workflow ([#23](https://github.com/SocialGouv/1000jours-blues/issues/23)) ([c881b79](https://github.com/SocialGouv/1000jours-blues/commit/c881b79c19a2c4d85ca0e25939d925cf0a124936))
+
 # [1.4.0](https://github.com/SocialGouv/1000jours-blues/compare/v1.3.0...v1.4.0) (2022-04-01)
 
 
