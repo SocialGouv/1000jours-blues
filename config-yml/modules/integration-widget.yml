@@ -3,7 +3,9 @@ description: L’équipe de 1000jours Blues vous propose d’intégrer son quest
 
 iframe:
   title: iframe
-  source_required: Afin de pouvoir utiliser le widget, vous devez vous rapprocher de notre équipe afin qu'elle vous fournisse un code à intégrer dans l'url de l'iframe (qui remplacera "monsiteweb" ci-desous).
+  source_required_1: Afin de pouvoir utiliser le widget, vous devez 
+  source_required_2: vous rapprocher de notre équipe afin qu'elle vous fournisse un code
+  source_required_3: à intégrer dans l'url de l'iframe (qui remplacera "monsiteweb" ci-desous).
   description: Avec l’iframe, il suffit d’ajouter le code suivant à l’endroit où vous souhaitez voir apparaître le module.
   custom: C’est à vous de décider des dimensions que prendra le module. Pour un affichage optimal, nous vous conseillons de garder les dimensions présentent dans le code fourni.
 
