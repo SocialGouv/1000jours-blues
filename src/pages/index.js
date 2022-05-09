@@ -97,15 +97,15 @@ function Partners() {
         <div className="py-3 description">{partners.description}</div>
       </Col>
       <Col
-        xs={0}
-        xl={{ offset: 1, span: 11 }}
-        className="d-flex justify-content-around w-100 align-items-center flex-wrap">
+        className="d-flex justify-content-around w-100 align-items-center flex-wrap"
+        style={{ flexDirection: "row" }}
+      >
         {partners.list.map((partner, index) => (
-          <Col key={index}>
+          <Col key={index} className="col-3">
             <img
               width="100%"
               src={"../assets/imgs/partners/" + partner.image}
-              alt="header-phone"
+              alt="icon-partenaire"
             />
           </Col>
         ))}
