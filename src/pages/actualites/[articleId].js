@@ -65,7 +65,7 @@ function Article() {
                 title="Widget EPDS"
                 src={widgetUrl}
                 width="100%"
-                height="640px"
+                height="700px"
                 style={{ border: "1px solid gray" }}
               />
             ) : null}

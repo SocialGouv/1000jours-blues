@@ -20,7 +20,8 @@ function IntegrationWidget() {
   const code = `<iframe
     src = "https://nos1000jours-blues-epds-widget.fabrique.social.gouv.fr?source=monsiteweb"
     width = "100%"
-    height = "600px"
+    height = "700px"
+    style={{ border: "1px solid gray" }}
   ></iframe >`;
 
   const widgetUrl =
@@ -39,19 +40,24 @@ function IntegrationWidget() {
           title="Widget EPDS"
           src={widgetUrl}
           width="100%"
-          height="600px"
+          height="670px"
           style={{ border: "1px solid gray" }}
         />
 
         <Col md={{ offset: 2, span: 8 }}>
-          <div className="font-weight-bold pb-5" style={{ fontSize: "32px" }}>
+          <div
+            className="font-weight-bold pb-5"
+            style={{ fontSize: "32px", marginTop: 20 }}
+          >
             {Labels.iframe.title}
           </div>
           <p className="content-article" style={{ whiteSpace: "pre-wrap" }}>
             {Labels.iframe.description}
             <br />
             <br />
-            {Labels.iframe.source_required}
+            {Labels.iframe.source_required_1}
+            <b> {Labels.iframe.source_required_2} </b>
+            {Labels.iframe.source_required_3}
             <br />
             <br />
             <CodeBlock
