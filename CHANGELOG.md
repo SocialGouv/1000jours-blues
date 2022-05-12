@@ -1,3 +1,11 @@
+## [1.5.1](https://github.com/SocialGouv/1000jours-blues/compare/v1.5.0...v1.5.1) (2022-05-12)
+
+
+### Bug Fixes
+
+* **iframe:** maj info ([7f9c9c6](https://github.com/SocialGouv/1000jours-blues/commit/7f9c9c6eab683bafc32037d599bfaec0fa4e47f5))
+* **iframe:** taille et information intégration ([881390c](https://github.com/SocialGouv/1000jours-blues/commit/881390cb7c52ffe9d31ccdf6627ad5dbca32c24e))
+
 # [1.5.0](https://github.com/SocialGouv/1000jours-blues/compare/v1.4.2...v1.5.0) (2022-05-09)
 
 
