@@ -18,7 +18,7 @@ export function Footer() {
       <FooterBody description={footer.laFabrique}>
         <Logo>{footer.republiqueFrancaise}</Logo>
         {footer.liensGouv.map((item, index) => (
-          <FooterBodyItem KEY={index}>
+          <FooterBodyItem key={index}>
             <Link href={item.url}>{item.name}</Link>
           </FooterBodyItem>
         ))}
@@ -31,7 +31,6 @@ export function Footer() {
           </FooterLink>
         ))}
         <FooterCopy>
-          {footer.licence}{" "}
           <a
             href="https://github.com/etalab/licence-ouverte/blob/master/LO.md"
             target="_blank"
