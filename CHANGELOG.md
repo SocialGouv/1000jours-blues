@@ -1,3 +1,17 @@
+# [1.6.0](https://github.com/SocialGouv/1000jours-blues/compare/v1.5.5...v1.6.0) (2022-07-12)
+
+
+### Bug Fixes
+
+* **footer:** fix libs ([9636d95](https://github.com/SocialGouv/1000jours-blues/commit/9636d95feced1c20ecec2a3473cfe5d5af5d921f))
+
+
+### Features
+
+* **deps:** jest ([f05aabb](https://github.com/SocialGouv/1000jours-blues/commit/f05aabb3e0cb54daa039e4d30a401ef11d32fba4))
+* **stats:** maj ([530c6e5](https://github.com/SocialGouv/1000jours-blues/commit/530c6e5d561a75779f48dc0c06e1382127dea6bc))
+* **stats:** wording ([b3a0436](https://github.com/SocialGouv/1000jours-blues/commit/b3a04368e7235b994fa0eed555d3cf41d21de051))
+
 ## [1.5.5](https://github.com/SocialGouv/1000jours-blues/compare/v1.5.4...v1.5.5) (2022-07-12)
 
 
