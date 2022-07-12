@@ -3,11 +3,13 @@
   font-family: "Marianne";
   src: url("../fonts/Marianne-Regular.otf") format("truetype");
 }
+
 body {
   font-family: Marianne, sans-serif;
   font-size: 16px;
   color: var(--primary);
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -16,7 +18,7 @@ html {
 * Corrections après l'import du design system de l'état (@dataesr/react-dsfr)
 *****/
 [href] {
-  box-shadow: none !important;
+  background-image: none !important;
 }
 
 [target=_blank]:after {
@@ -25,4 +27,8 @@ html {
 
 ol>li::marker {
   content: none !important;
+}
+
+.btn-primary:hover {
+  background-color: black !important;
 }

@@ -6,7 +6,7 @@
   "private": true,
   "repository": "",
   "dependencies": {
-    "@dataesr/react-dsfr": "^1.0.2",
+    "@dataesr/react-dsfr": "^2.0.0",
     "@socialgouv/matomo-next": "^1.2.2",
     "axios": "^0.21.4",
     "bootstrap": "^4.6.1",
