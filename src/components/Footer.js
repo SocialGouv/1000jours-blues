@@ -36,7 +36,6 @@ export function Footer() {
             href="https://github.com/etalab/licence-ouverte/blob/master/LO.md"
             target="_blank"
             rel="noreferrer"
-            style={{ fontSize: "initial" }}
           >
             licence etalab-2.0
           </a>
