@@ -3,6 +3,7 @@ home:
   title: Les stats
   content: Vous pouvez retrouver toutes nos statistiques sur la page suivante
   url : https://1000jours.fabrique.social.gouv.fr/stats
+  urlLabel: Accéder aux statistiques
 
 page:
   title: Statistiques

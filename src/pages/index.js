@@ -76,7 +76,7 @@ function Statistic() {
             rel="noreferrer"
             className="blue-btn mt-2 btn btn-primary"
           >
-            {stats.url}
+            {stats.urlLabel}
           </a>
         </p>
       </Row>
