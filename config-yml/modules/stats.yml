@@ -1,15 +1,8 @@
 home:
   display: true
   title: Les stats
-  #Placer les icones dans le dossier public/assets/imgs/icons
-  kpis:
-    - title: tests EPDS passés, tout confondu
-      value: 374
-      icon_name: icone-EPDS.svg
-
-    - title: parents orientés, tout confondu
-      value: 258
-      icon_name: icone-parents.svg
+  content: Vous pouvez retrouver toutes nos statistiques sur la page suivante
+  url : https://1000jours.fabrique.social.gouv.fr/stats
 
 page:
   title: Statistiques

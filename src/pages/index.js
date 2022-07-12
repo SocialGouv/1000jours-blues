@@ -3,11 +3,11 @@ import { Col, Container, Row } from "react-bootstrap";
 import Slider from "react-slick";
 
 import header from "../../config-yml/commons/header.yml";
-import partners from "../../config-yml/modules/partners.yml";
 import articles from "../../config-yml/modules/articles.yml";
 import instagram from "../../config-yml/modules/instagram.yml";
 import newsletter from "../../config-yml/modules/newsletter.yml";
 import onboarding from "../../config-yml/modules/onboarding.yml";
+import partners from "../../config-yml/modules/partners.yml";
 import { home } from "../../config-yml/modules/stats.yml";
 import { ArticleCard } from "../components/ArticleCard";
 import { Header } from "../components/Header";
@@ -15,7 +15,6 @@ import InstagramPostList from "../components/InstagramPostList";
 import { Layout } from "../components/Layout";
 import Newsletter from "../components/Newsletter";
 import { Onboarding } from "../components/Onboarding";
-import { Stats } from "../components/Stats";
 
 const stats = home;
 
@@ -69,21 +68,17 @@ function Statistic() {
         <Col>
           <h2 className="pb-lg-5">{stats.title}</h2>
         </Col>
-        <Col
-          xs={0}
-          xl={{ offset: 1, span: 11 }}
-          className="d-flex justify-content-around w-100 align-items-center flex-wrap"
-        >
-          {stats.kpis.map((stat, index) => (
-            <Col xl={4} md={3} key={index} className="mb-4 mb-md-0">
-              <Stats
-                title={stat.title}
-                icon={stat.icon_name}
-                value={stat.value}
-              />
-            </Col>
-          ))}
-        </Col>
+        <p style={{ textAlign: "center" }}>
+          {stats.content} : <br />
+          <a
+            href={stats.url}
+            target="_blank"
+            rel="noreferrer"
+            className="blue-btn mt-2 btn btn-primary"
+          >
+            {stats.url}
+          </a>
+        </p>
       </Row>
     )
   );
