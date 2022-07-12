@@ -1,3 +1,10 @@
+## [1.5.4](https://github.com/SocialGouv/1000jours-blues/compare/v1.5.3...v1.5.4) (2022-07-12)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([1afd3ed](https://github.com/SocialGouv/1000jours-blues/commit/1afd3eda4d0728ef3d73f138289d1ec1779b25b3))
+
 ## [1.5.3](https://github.com/SocialGouv/1000jours-blues/compare/v1.5.2...v1.5.3) (2022-07-12)
 
 
