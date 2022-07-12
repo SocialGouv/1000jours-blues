@@ -1,3 +1,10 @@
+## [1.5.5](https://github.com/SocialGouv/1000jours-blues/compare/v1.5.4...v1.5.5) (2022-07-12)
+
+
+### Bug Fixes
+
+* **deps:** update dependency react-bootstrap to v2 ([aee3aaa](https://github.com/SocialGouv/1000jours-blues/commit/aee3aaaf93cf09785549afbc15c4d6c4554a9817))
+
 ## [1.5.4](https://github.com/SocialGouv/1000jours-blues/compare/v1.5.3...v1.5.4) (2022-07-12)
 
 
