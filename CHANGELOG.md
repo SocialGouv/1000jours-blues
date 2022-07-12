@@ -1,3 +1,10 @@
+## [1.5.2](https://github.com/SocialGouv/1000jours-blues/compare/v1.5.1...v1.5.2) (2022-07-12)
+
+
+### Bug Fixes
+
+* **deps:** update dependency react-leaflet to v4 ([989935c](https://github.com/SocialGouv/1000jours-blues/commit/989935c3c7b420c5f463d404fe2f442838ee39ba))
+
 ## [1.5.1](https://github.com/SocialGouv/1000jours-blues/compare/v1.5.0...v1.5.1) (2022-05-12)
 
 
