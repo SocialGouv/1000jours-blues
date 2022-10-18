@@ -18,7 +18,7 @@ export default function widgetIntegration() {
 
 function IntegrationWidget() {
   const code = `<iframe
-    src = "https://nos1000jours-blues-epds-widget.fabrique.social.gouv.fr?source=monsiteweb"
+    src = "https://nos1000jours-blues-epds-widget.fabrique.social.gouv.fr?source=xxxxxxxxxx"
     width = "100%"
     height = "700px"
     style={{ border: "1px solid gray" }}
