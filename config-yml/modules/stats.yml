@@ -2,42 +2,8 @@ home:
   display: true
   title: Les stats
   content: Vous pouvez retrouver toutes nos statistiques sur la page suivante
-  url : https://1000jours.fabrique.social.gouv.fr/stats
+  url : /stats
   urlLabel: Accéder aux statistiques
 
 page:
   title: Statistiques
-  chartWidth: 700
-  chartHeight: 350
-  graphs:
-    - titre: Lorem ipsum
-      name: Connexions par jour
-      affichage: graph
-      type: lineChart
-      valeurs:
-        2021-05-21: 10
-        2021-06-22: 40
-        2021-08-29: 10
-        2021-10-30: 150
-
-    - titre: Lorem ipsum
-      name: Téléchargements par jour
-      affichage: graph
-      type: barChart
-      valeurs:
-        2021-06-21: 39
-        2021-06-22: 45
-        2021-06-23: 51
-
-    - titre: Lorem ipsum
-      name: Visites par jour
-      affichage: graph
-      type: barChart
-      valeurs:
-        2021-06-21: 43
-        2021-06-22: 10
-        2021-06-23: 6
-
-    - titre: Temps moyen sur l'app
-      affichage: chiffre_cle
-      valeur: 4min02

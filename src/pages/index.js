@@ -72,7 +72,6 @@ function Statistic() {
           {stats.content} : <br />
           <a
             href={stats.url}
-            target="_blank"
             rel="noreferrer"
             className="blue-btn mt-2 btn btn-primary"
           >

@@ -9,6 +9,15 @@ list:
   - title: Biba Magazine
     image: bibamagazine.jpg
 
+  - title: Caisse Nationale d’Allocations Familiales
+    image: cnaf.png
+  
+  - title: Doctissimo
+    image: doctissimo.jpeg
+
+  - title: Enjoy family
+    image: enjoy-family.jpeg
+
   - title: les pros de la petite enfance
     image: pros-petite-enfance.png
 
