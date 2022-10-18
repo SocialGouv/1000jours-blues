@@ -1,3 +1,10 @@
+## [1.7.2](https://github.com/SocialGouv/1000jours-blues/compare/v1.7.1...v1.7.2) (2022-10-18)
+
+
+### Bug Fixes
+
+* **source:** rollback ([834c549](https://github.com/SocialGouv/1000jours-blues/commit/834c5499b282115c049c8447aae52eb72b5dd1e7))
+
 ## [1.7.1](https://github.com/SocialGouv/1000jours-blues/compare/v1.7.0...v1.7.1) (2022-10-18)
 
 
