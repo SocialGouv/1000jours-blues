@@ -16,7 +16,7 @@ list:
     image: doctissimo.jpeg
 
   - title: Enjoy family
-    image: enjoy-family.png
+    image: enjoy-family.jpeg
 
   - title: les pros de la petite enfance
     image: pros-petite-enfance.png
@@ -35,6 +35,3 @@ list:
 
   - title: parents.fr
     image: parents.png
-
-  - title: Santé Publique France
-    image: spf.jpeg
