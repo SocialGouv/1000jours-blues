@@ -1,3 +1,10 @@
+## [1.7.3](https://github.com/SocialGouv/1000jours-blues/compare/v1.7.2...v1.7.3) (2022-10-27)
+
+
+### Bug Fixes
+
+* **accessibilite:** déclaration dans le footer ([5ef3445](https://github.com/SocialGouv/1000jours-blues/commit/5ef344531b4adb25c8a0115afbee247ae756dc7f))
+
 ## [1.7.2](https://github.com/SocialGouv/1000jours-blues/compare/v1.7.1...v1.7.2) (2022-10-18)
 
 
