@@ -20,5 +20,8 @@ bottomMenuList:
 
   - name: Accessibilité - Non Conforme
 
+  - name: Statistiques
+    slug: stats
+
 laFabrique: La Fabrique Numérique des Ministères Sociaux
 republiqueFrancaise: République Française
