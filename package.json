@@ -8,7 +8,7 @@
   "dependencies": {
     "@dataesr/react-dsfr": "^2.9.2",
     "@socialgouv/matomo-next": "^1.2.2",
-    "axios": "^0.27.0",
+    "axios": "^1.0.0",
     "bootstrap": "^4.6.1",
     "js-yaml-loader": "^1.2.2",
     "leaflet": "^1.7.1",
