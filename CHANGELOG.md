@@ -1,3 +1,16 @@
+# [1.8.0](https://github.com/SocialGouv/1000jours-blues/compare/v1.7.3...v1.8.0) (2022-11-03)
+
+
+### Bug Fixes
+
+* **dependency:** revert @dataesr/react-dsfr ([a4027bf](https://github.com/SocialGouv/1000jours-blues/commit/a4027bf3c2df0478d7f85d30c28030538f86efed))
+
+
+### Features
+
+* **footer:** ajout stats ([04c6a29](https://github.com/SocialGouv/1000jours-blues/commit/04c6a29970ea83954086cb3eb68ffc48eb5a183c))
+* **footer:** déclaration d'accessibilite ([4472a1a](https://github.com/SocialGouv/1000jours-blues/commit/4472a1a4860e89f7904d2b7fe6c5a5ca27419552))
+
 ## [1.7.3](https://github.com/SocialGouv/1000jours-blues/compare/v1.7.2...v1.7.3) (2022-10-27)
 
 
