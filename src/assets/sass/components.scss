@@ -2,6 +2,7 @@ h1 {
   font-size: 48px;
   font-weight: bold;
   line-height: 60px;
+
   @media (max-width: 500px) {
     font-size: 32px;
   }
@@ -11,20 +12,25 @@ h2 {
   font-weight: bold;
 }
 
-h2, .description {
+h2,
+.description {
   font-size: 24px;
   line-height: 33px;
+
   @media (max-width: 500px) {
     font-size: 18px;
   }
 }
+
 h3 {
   font-size: 20px;
   font-weight: bold;
 }
+
 .description {
   font-weight: 400;
 }
+
 .small-title {
   font-size: 14px;
 }
@@ -44,18 +50,24 @@ input {
 .big-title {
   font-weight: bold;
   font-size: 72px;
+
   @media (max-width: 1024px) {
     font-size: 60px;
   }
+
   @media (max-width: 500px) {
     font-size: 32px;
   }
 }
-.blue-btn, .btn-blue-arrow {
+
+.blue-btn,
+.btn-blue-arrow {
   background: #000091;
   border-radius: 0;
 }
-.btn:focus, input:focus {
+
+.btn:focus,
+input:focus {
   outline: none;
   box-shadow: none;
 }
@@ -65,4 +77,10 @@ input {
   align-items: center;
   width: fit-content;
 
+}
+
+.accessibility-content {
+  [href] {
+    background-image: var(--underline-img), var(--underline-img) !important;
+  }
 }

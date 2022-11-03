@@ -19,6 +19,10 @@ bottomMenuList:
     slug: politique-confidentialite
 
   - name: Accessibilité - Non Conforme
+    slug: accessibilite
+
+  - name: Statistiques
+    slug: stats
 
 laFabrique: La Fabrique Numérique des Ministères Sociaux
 republiqueFrancaise: République Française
