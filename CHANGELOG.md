@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/SocialGouv/1000jours-blues/compare/v1.8.0...v1.9.0) (2022-11-08)
+
+
+### Features
+
+* **partenaires:** maj ([f72fde1](https://github.com/SocialGouv/1000jours-blues/commit/f72fde191489d41bcc8b4dea77f804daa08981b6))
+
 # [1.8.0](https://github.com/SocialGouv/1000jours-blues/compare/v1.7.3...v1.8.0) (2022-11-03)
 
 
