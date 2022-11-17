@@ -1,3 +1,10 @@
+## [1.9.1](https://github.com/SocialGouv/1000jours-blues/compare/v1.9.0...v1.9.1) (2022-11-17)
+
+
+### Bug Fixes
+
+* **security:** config ([af0c4de](https://github.com/SocialGouv/1000jours-blues/commit/af0c4de2618f3056a5730c06e86d652410c9e148))
+
 # [1.9.0](https://github.com/SocialGouv/1000jours-blues/compare/v1.8.0...v1.9.0) (2022-11-08)
 
 
