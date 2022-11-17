@@ -1,15 +1,15 @@
 const securityHeaders = [
   {
-    key: 'X-Frame-Options',
-    value: 'SAMEORIGIN'
-  },
-  {
-    key: 'X-XSS-Protection',
-    value: '1; mode=block'
-  },
-  {
-    key: 'X-Content-Type-Options',
+    key: 'x-content-type-options',
     value: 'nosniff'
+  },
+  {
+    key: 'x-frame-options',
+    value: 'deny'
+  },
+  {
+    key: 'x-frame-options',
+    value: '1; mode=block'
   }
 ]
 
