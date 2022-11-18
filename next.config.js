@@ -1,18 +1,3 @@
-const securityHeaders = [
-  {
-    key: 'X-Frame-Options',
-    value: 'SAMEORIGIN'
-  },
-  {
-    key: 'X-XSS-Protection',
-    value: '1; mode=block'
-  },
-  {
-    key: 'X-Content-Type-Options',
-    value: 'nosniff'
-  }
-]
-
 module.exports = {
   webpack: function (config) {
     config.module.rules.push({
@@ -25,8 +10,21 @@ module.exports = {
     return [
       {
         // Apply these headers to all routes in your application.
-        source: '/:path*',
-        headers: securityHeaders,
+        source: '/(.*)',
+        headers: [
+          {
+            key: 'X-Content-Type-Options',
+            value: 'nosniff',
+          },
+          {
+            key: 'X-Frame-Options',
+            value: 'DENY',
+          },
+          {
+            key: 'X-XSS-Protection',
+            value: '1; mode=block'
+          }
+        ],
       },
     ]
   },
