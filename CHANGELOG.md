@@ -1,3 +1,10 @@
+## [1.9.3](https://github.com/SocialGouv/1000jours-blues/compare/v1.9.2...v1.9.3) (2022-11-22)
+
+
+### Bug Fixes
+
+* **partenaire:** ajout mairie bussy ([929038e](https://github.com/SocialGouv/1000jours-blues/commit/929038e53176fd24a6bec23c45959b44ee71c305))
+
 ## [1.9.2](https://github.com/SocialGouv/1000jours-blues/compare/v1.9.1...v1.9.2) (2022-11-18)
 
 
