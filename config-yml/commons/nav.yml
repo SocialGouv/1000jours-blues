@@ -11,6 +11,9 @@ menuList:
   - name: 
     slug: /stats
 
+  - name: 
+    slug: /ressources
+
 contact: Nous contacter
 contact_mailto: contact-nos1000jours@fabrique.social.gouv.fr 
 
