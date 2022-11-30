@@ -26,10 +26,10 @@ export default function Ressources() {
 
       <Accordion className="accordion-smallscreen">
         <AccordionItem title={ressources.epdsProsDeSante.title}>
-          <ItemProfessionnelsSante />
+          <ItemHealthProfessionals />
         </AccordionItem>
         <AccordionItem title={ressources.epdsLignes.title}>
-          <ItemLignesTelephoniques />
+          <ItemTelephoneLines />
         </AccordionItem>
         <AccordionItem title={ressources.epdsSitesInformation.title}>
           <ItemSitesInformation />
@@ -38,7 +38,7 @@ export default function Ressources() {
           <ItemResources />
         </AccordionItem>
         <AccordionItem title={ressources.epdsContact.title}>
-          <ItemContacter sendEmailOnClick={openMailTo} />
+          <ItemContact sendEmailOnClick={openMailTo} />
         </AccordionItem>
       </Accordion >
 
@@ -57,12 +57,12 @@ const ItemSitesInformation = () => (
   </div>
 )
 
-const ItemLignesTelephoniques = () => (
+const ItemTelephoneLines = () => (
   <div style={{ fontSize: 14 }}>
     <div className="ressources-contact-item">
       {ressources.epdsLignes.content.map((contact, index) => (
         <div style={{ marginBottom: 30 }} key={index}>
-          <div className="ressources-contact-title">{contact.contactName}</div>
+          <div className="resources-contact-title">{contact.contactName}</div>
           <div>{contact.thematic}</div>
           <div className="font-weight-bold">{contact.openingTime}</div>
           <div style={{ display: "-webkit-inline-box" }}>
@@ -95,7 +95,7 @@ const ItemResources = () => (
   </div>
 )
 
-const ItemContacter = ({ sendEmailOnClick }) => (
+const ItemContact = ({ sendEmailOnClick }) => (
   <div style={{ textAlign: "center" }}>
     <p style={{ textAlign: "justify" }}>{ressources.epdsContact.content}</p>
     <button className="fr-btn" onClick={sendEmailOnClick}>
@@ -104,7 +104,7 @@ const ItemContacter = ({ sendEmailOnClick }) => (
   </div>
 )
 
-const ItemProfessionnelsSante = () => (
+const ItemHealthProfessionals = () => (
   <div>
     {ressources.epdsProsDeSante.content.map((item, index) => (
       <div
