@@ -1,3 +1,10 @@
+## [1.9.4](https://github.com/SocialGouv/1000jours-blues/compare/v1.9.3...v1.9.4) (2022-11-30)
+
+
+### Bug Fixes
+
+* **deps:** update dependency axios to v1 ([8b9cd0c](https://github.com/SocialGouv/1000jours-blues/commit/8b9cd0c63d6c5422763f6afeefdd510d320594e0))
+
 ## [1.9.3](https://github.com/SocialGouv/1000jours-blues/compare/v1.9.2...v1.9.3) (2022-11-22)
 
 
