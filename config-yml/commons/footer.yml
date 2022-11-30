@@ -13,16 +13,16 @@ liensGouv:
 
 bottomMenuList:
   - name: Mentions légales
-    slug: mentions-legales
+    slug: /mentions-legales
 
   - name: Politique de confidentialité
-    slug: politique-confidentialite
+    slug: /politique-confidentialite
 
   - name: Accessibilité - Non Conforme
-    slug: accessibilite
+    slug: /accessibilite
 
   - name: Statistiques
-    slug: stats
+    slug: /stats
 
 laFabrique: La Fabrique Numérique des Ministères Sociaux
 republiqueFrancaise: République Française
