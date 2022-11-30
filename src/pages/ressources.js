@@ -9,7 +9,99 @@ const ressources = page;
 export default function Ressources() {
   const router = useRouter()
 
-  const openMailTo = () => router.push(`mailto:${ressources.epdsContact.mailContact}&subject=${ressources.epdsContact.mailSubject}`)
+  const openMailTo = () => {
+    const mailToUrl = `mailto:${ressources.epdsContact.mailContact}&subject=${ressources.epdsContact.mailSubject}`
+    router.push(mailToUrl)
+  }
+
+  const classNameByIndex = (index) => `ressources-item ${index > 0 ? "ressources-item-border" : ""}`
+
+  const ItemSitesInformation = () => (
+    <div>
+      {ressources.epdsSitesInformation.content.map((site, index) => (
+        <div key={index}>
+          {showUrl(site.url, site.url)}
+          <br />
+        </div>
+      ))}
+    </div>
+  )
+
+  const ItemTelephoneLines = () => (
+    <div style={{ fontSize: 14 }}>
+      <div className="ressources-contact-item">
+        {ressources.epdsLignes.content.map((contact, index) => (
+          <div style={{ marginBottom: 30 }} key={index}>
+            <div className="resources-contact-title">{contact.contactName}</div>
+            <div>{contact.thematic}</div>
+            <div className="font-weight-bold">{contact.openingTime}</div>
+            <div style={{ display: "-webkit-inline-box" }}>
+              <img
+                alt=""
+                height={17}
+                style={{ marginRight: 10 }}
+                src="/assets/imgs/resources/icone-telephone.svg"
+              />
+              <div className="font-weight-bold">{contact.phoneNumber}</div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+
+  const ItemResources = () => (
+    <div>
+      {ressources.epdsRessourcesPremiersMois.content.map((resource, index) => (
+        <div
+          className={classNameByIndex(index)}
+          key={index}
+        >
+          <b>{resource.name}</b>
+          {resource.description}
+        </div>
+      ))}
+    </div>
+  )
+
+  const ItemContact = ({ sendEmailOnClick }) => (
+    <div style={{ textAlign: "center" }}>
+      <p style={{ textAlign: "justify" }}>{ressources.epdsContact.content}</p>
+      <button className="fr-btn" onClick={sendEmailOnClick}>
+        {ressources.epdsContact.button}
+      </button>
+    </div>
+  )
+
+  const ItemHealthProfessionals = () => (
+    <div>
+      {ressources.epdsProsDeSante.content.map((item, index) => (
+        <div
+          className={classNameByIndex(index)}
+          key={index}
+        >
+          <b>{item.name}</b>
+          <br />
+          {item.description}
+          <br />
+          {item.url
+            ? showUrl(item.url, ressources.boutonConsulterDocument)
+            : ""}
+        </div>
+      ))}
+    </div>
+  )
+
+  const showUrl = (url, text) => (
+    <a
+      href={url}
+      target="_blank"
+      style={{ textDecoration: "underline" }}
+      rel="noreferrer"
+    >
+      {text}
+    </a>
+  )
 
   return (
     <Layout>
@@ -45,93 +137,4 @@ export default function Ressources() {
     </Layout>
   );
 }
-
-const ItemSitesInformation = () => (
-  <div>
-    {ressources.epdsSitesInformation.content.map((site, index) => (
-      <div key={index}>
-        {showUrl(site.url, site.url)}
-        <br />
-      </div>
-    ))}
-  </div>
-)
-
-const ItemTelephoneLines = () => (
-  <div style={{ fontSize: 14 }}>
-    <div className="ressources-contact-item">
-      {ressources.epdsLignes.content.map((contact, index) => (
-        <div style={{ marginBottom: 30 }} key={index}>
-          <div className="resources-contact-title">{contact.contactName}</div>
-          <div>{contact.thematic}</div>
-          <div className="font-weight-bold">{contact.openingTime}</div>
-          <div style={{ display: "-webkit-inline-box" }}>
-            <img
-              alt=""
-              height={17}
-              style={{ marginRight: 10 }}
-              src="/assets/imgs/resources/icone-telephone.svg"
-            />
-            <div className="font-weight-bold">{contact.phoneNumber}</div>
-          </div>
-        </div>
-      ))}
-    </div>
-  </div>
-)
-
-const ItemResources = () => (
-  <div>
-    {ressources.epdsRessourcesPremiersMois.content.map((resource, index) => (
-      <div
-        className={`ressources-item ${index > 0 ? "ressources-item-border" : ""
-          }`}
-        key={index}
-      >
-        <b>{resource.name}</b>
-        {resource.description}
-      </div>
-    ))}
-  </div>
-)
-
-const ItemContact = ({ sendEmailOnClick }) => (
-  <div style={{ textAlign: "center" }}>
-    <p style={{ textAlign: "justify" }}>{ressources.epdsContact.content}</p>
-    <button className="fr-btn" onClick={sendEmailOnClick}>
-      {ressources.epdsContact.button}
-    </button>
-  </div>
-)
-
-const ItemHealthProfessionals = () => (
-  <div>
-    {ressources.epdsProsDeSante.content.map((item, index) => (
-      <div
-        className={`ressources-item ${index > 0 ? "ressources-item-border" : ""
-          }`}
-        key={index}
-      >
-        <b>{item.name}</b>
-        <br />
-        {item.description}
-        <br />
-        {item.url
-          ? showUrl(item.url, ressources.boutonConsulterDocument)
-          : ""}
-      </div>
-    ))}
-  </div>
-)
-
-const showUrl = (url, text) => (
-  <a
-    href={url}
-    target="_blank"
-    style={{ textDecoration: "underline" }}
-    rel="noreferrer"
-  >
-    {text}
-  </a>
-)
 
