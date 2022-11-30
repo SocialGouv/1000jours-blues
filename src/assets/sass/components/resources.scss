@@ -27,6 +27,14 @@
   }
 }
 
+button.fr-accordion__btn:after {
+  content: "\002B" !important;
+}
+
+button.fr-accordion__btn[aria-expanded=true]:after {
+  content: "\002D" !important;
+}
+
 @media screen and (max-width: 450px) {
   .accordion-smallscreen {
     section {
