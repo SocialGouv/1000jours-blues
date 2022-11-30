@@ -14,7 +14,7 @@ export default function Ressources() {
     router.push(mailToUrl)
   }
 
-  const classNameByIndex = (index) => `ressources-item ${index > 0 ? "ressources-item-border" : ""}`
+  const classNameByIndex = (index) => `resources-item ${index > 0 ? "resources-item-border" : ""}`
 
   const ItemSitesInformation = () => (
     <div>
@@ -29,7 +29,7 @@ export default function Ressources() {
 
   const ItemTelephoneLines = () => (
     <div style={{ fontSize: 14 }}>
-      <div className="ressources-contact-item">
+      <div className="resources-contact-item">
         {ressources.epdsLignes.content.map((contact, index) => (
           <div style={{ marginBottom: 30 }} key={index}>
             <div className="resources-contact-title">{contact.contactName}</div>
