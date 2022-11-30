@@ -1,3 +1,10 @@
+## [1.9.5](https://github.com/SocialGouv/1000jours-blues/compare/v1.9.4...v1.9.5) (2022-11-30)
+
+
+### Bug Fixes
+
+* **nav:** navigation footer ([745750b](https://github.com/SocialGouv/1000jours-blues/commit/745750b8e9530f0688b409fb110c773f7d7970aa))
+
 ## [1.9.4](https://github.com/SocialGouv/1000jours-blues/compare/v1.9.3...v1.9.4) (2022-11-30)
 
 
