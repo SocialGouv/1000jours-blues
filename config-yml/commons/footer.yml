@@ -25,7 +25,7 @@ bottomMenuList:
     slug: /stats
 
   - name: Ressources
-    slug: ressources
+    slug: /ressources
 
 laFabrique: La Fabrique Numérique des Ministères Sociaux
 republiqueFrancaise: République Française
