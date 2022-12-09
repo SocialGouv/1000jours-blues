@@ -23,6 +23,11 @@ page:
         phoneNumber: "02 40 16 06 52"
         thematic: "Ligne dédiée à l'écoute des parents qui éprouvent des difficultés dans leurs relations avec leurs enfants."
 
+      - contactName: "Prévention suicide"
+        openingTime: "24h/24 et 7j/7"
+        phoneNumber: "3114"
+        thematic: "Ligne dédiée à la prévention du suicide"
+
       - contactName: "Enfance & Covid"
         openingTime: "Du lundi au samedi de 10h à 18h"
         phoneNumber: "0 805 827 827"
