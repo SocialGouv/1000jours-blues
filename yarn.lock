@@ -383,6 +383,11 @@
   resolved "https://registry.yarnpkg.com/@gouvfr/dsfr/-/dsfr-1.7.0.tgz#54d5b4da8d607b57aaa36452e574cd5874a21881"
   integrity sha512-FMaB37SN5Zc5R5sryOGAnWRFQfmfbycHDV+656JCOKgAVKkzU1c5bjzjXTSsK2FtDbnog+qSHct2pGNQHlFDsQ==
 
+"@gouvfr/dsfr@^1.8.5":
+  version "1.8.5"
+  resolved "https://registry.yarnpkg.com/@gouvfr/dsfr/-/dsfr-1.8.5.tgz#e99d095e99debcce0c41db18989637290d588b78"
+  integrity sha512-29L+THvWmYJXztPa0Os5TS9yD2WQbrH7VnCKxkyUXQZQ+6lsGebtz0GdCnLexOWDfCn1y53Mh7+/ihxI/z0Vjw==
+
 "@hapi/accept@5.0.2":
   version "5.0.2"
   resolved "https://registry.yarnpkg.com/@hapi/accept/-/accept-5.0.2.tgz#ab7043b037e68b722f93f376afb05e85c0699523"

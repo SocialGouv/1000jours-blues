@@ -84,3 +84,10 @@ input:focus {
     background-image: var(--underline-img), var(--underline-img) !important;
   }
 }
+
+.resources {
+  .resources-input {
+    flex-grow: 1;
+    margin-inline: 10px;
+  }
+}
