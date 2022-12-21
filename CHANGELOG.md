@@ -1,3 +1,26 @@
+# [1.10.0](https://github.com/SocialGouv/1000jours-blues/compare/v1.9.5...v1.10.0) (2022-12-21)
+
+
+### Bug Fixes
+
+* **ressources:** config ([94818db](https://github.com/SocialGouv/1000jours-blues/commit/94818db670a79a09f776a696cbf4d95cf7b750a7))
+* **ressources:** icon accordion ([ae685e6](https://github.com/SocialGouv/1000jours-blues/commit/ae685e6e284e4cc7b214eb42d3c82d8fd58f078d))
+* **ressources:** nav ([b8cce36](https://github.com/SocialGouv/1000jours-blues/commit/b8cce361ea5321ca1a29fbfc29bf8249d3a4161f))
+* **ressources:** wording ([b944fd5](https://github.com/SocialGouv/1000jours-blues/commit/b944fd558abfbe87ee9cd401a5257c1a30378bda))
+* **ressources:** wording ([43469c5](https://github.com/SocialGouv/1000jours-blues/commit/43469c5669af315b7e2b39e737fa986b6b33d816))
+
+
+### Features
+
+* **ressources:** ajour de la page ([849ba9d](https://github.com/SocialGouv/1000jours-blues/commit/849ba9d432ff6cba8fa111de26c227dabfa9af83))
+* **ressources:** branchement strapi pour l'envoi de la demande ([a8793b2](https://github.com/SocialGouv/1000jours-blues/commit/a8793b21c655fb63b5920b270600373a477b6dad))
+* **ressources:** formulaire de contact ([d39b32f](https://github.com/SocialGouv/1000jours-blues/commit/d39b32f6b71d9da3fba221ad5d2ba72917a24d87))
+* **ressources:** maj données ([a7a3725](https://github.com/SocialGouv/1000jours-blues/commit/a7a3725ccaf73abf7f18fc1450f960cf8ef7de64))
+* **ressources:** maj ressources ([7518aa4](https://github.com/SocialGouv/1000jours-blues/commit/7518aa4fe255d1c52a7f77b0b1a2e699a948d976))
+* **ressources:** retours de PR ([df3516c](https://github.com/SocialGouv/1000jours-blues/commit/df3516c26077b4f8185d69955c6def15096c9bf8))
+* **ressources:** retours de PR ([265b604](https://github.com/SocialGouv/1000jours-blues/commit/265b604e4f5c1e110f5408245ff6ba4a2bebf5cd))
+* **ressources:** retours de PR ([710fe50](https://github.com/SocialGouv/1000jours-blues/commit/710fe504cec85dcb47d45ba1bbcaa4e4946e2479))
+
 ## [1.9.5](https://github.com/SocialGouv/1000jours-blues/compare/v1.9.4...v1.9.5) (2022-11-30)
 
 
