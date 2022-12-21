@@ -84,3 +84,19 @@ input:focus {
     background-image: var(--underline-img), var(--underline-img) !important;
   }
 }
+
+.resources {
+  .resources-input {
+    flex-grow: 1;
+    margin-inline: 10px;
+  }
+
+  .resources-button {
+    margin-inline: 10px;
+  }
+
+  .resources-sending-contact {
+    color: var(--text-mention-grey);
+    font-size: .75rem;
+  }
+}
