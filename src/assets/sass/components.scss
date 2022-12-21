@@ -90,4 +90,13 @@ input:focus {
     flex-grow: 1;
     margin-inline: 10px;
   }
+
+  .resources-button {
+    margin-inline: 10px;
+  }
+
+  .resources-sending-contact {
+    color: var(--text-mention-grey);
+    font-size: .75rem;
+  }
 }

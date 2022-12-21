@@ -1,8 +1,10 @@
 import { Accordion, AccordionItem, Col, Row } from "@dataesr/react-dsfr";
-import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { page } from "../../config-yml/modules/ressources.yml";
 import { Layout } from "../components/Layout";
+import { useMutation } from "@apollo/client";
+import { client, EPDS_CONTACT_INFORMATION } from "../../apollo-client";
+import { Spinner } from "react-bootstrap";
 
 const ressources = page;
 
@@ -65,6 +67,9 @@ export default function Ressources() {
     const [isEmailValid, setEmailValid] = useState(false);
     const [isPhoneNumberValid, setPhoneNumberValid] = useState(false);
 
+    const [isLoading, setLoading] = useState(false)
+    const [sendingMessage, setSendingMessage] = useState("");
+
     const [emailValue, setEmailValue] = useState("");
     const [phoneNumberValue, setPhoneNumberValue] = useState("");
 
@@ -81,9 +86,30 @@ export default function Ressources() {
       setEnabledButton(isEmailValid || isPhoneNumberValid)
     }, [isEmailValid, isPhoneNumberValid])
 
-    const sendEmailOnClick = () => {
-      console.log(emailValue)
-      console.log(phoneNumberValue)
+    const [sendEmailContactQuery] = useMutation(EPDS_CONTACT_INFORMATION, {
+      client: client,
+      onCompleted: (data) => {
+        setSendingMessage("La demande a été envoyée")
+        setLoading(false)
+      },
+      onError: (err) => {
+        console.error(err)
+        setSendingMessage("Erreur lors de l'envoi")
+        setLoading(false)
+      },
+    })
+
+    const sendEmailOnClick = async () => {
+      setSendingMessage("")
+      setLoading(true)
+
+      await sendEmailContactQuery({
+        variables: {
+          prenom: "",
+          email: emailValue,
+          telephone: phoneNumberValue,
+        },
+      })
     }
 
     return (
@@ -126,7 +152,9 @@ export default function Ressources() {
           onClick={sendEmailOnClick}
           disabled={!isEnabledButton}>
           {ressources.epdsContact.button}
+          {isLoading && <Spinner animation="border" size="sm" style={{ marginLeft: 10 }} />}
         </button>
+        <span className="resources-sending-contact">{sendingMessage}</span>
       </div>
     )
   }
