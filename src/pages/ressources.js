@@ -11,6 +11,7 @@ const ressources = page;
 export default function Ressources() {
   const PATTERN_EMAIL = "[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z.]{2,15}"
   const PATTERN_PHONE_NUMBER = "[0-9]{10}"
+  const SOURCE_NAME = "Landing Blues - Ressources"
 
   const classNameByIndex = (index) => `resources-item ${index > 0 ? "resources-item-border" : ""}`
 
@@ -105,7 +106,7 @@ export default function Ressources() {
 
       await sendEmailContactQuery({
         variables: {
-          prenom: "",
+          prenom: `la personne [${SOURCE_NAME}]`,
           email: emailValue,
           telephone: phoneNumberValue,
         },
