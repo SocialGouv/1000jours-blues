@@ -106,7 +106,7 @@ export default function Ressources() {
 
       await sendEmailContactQuery({
         variables: {
-          prenom: `la personne [${SOURCE_NAME}]`,
+          prenom: `[${SOURCE_NAME}]`,
           email: emailValue,
           telephone: phoneNumberValue,
         },
