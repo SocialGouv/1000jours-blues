@@ -11,7 +11,7 @@ const ressources = page;
 export default function Ressources() {
   const PATTERN_EMAIL = "[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z.]{2,15}"
   const PATTERN_PHONE_NUMBER = "[0-9]{10}"
-  const SOURCE_NAME = "Landing Blues - Ressources"
+  const SOURCE_NAME = "1000jblues-ressources"
 
   const classNameByIndex = (index) => `resources-item ${index > 0 ? "resources-item-border" : ""}`
 
@@ -109,6 +109,10 @@ export default function Ressources() {
           prenom: `[${SOURCE_NAME}]`,
           email: emailValue,
           telephone: phoneNumberValue,
+          moyen: "sms",
+          horaires: "",
+          //nombre_enfants: null,
+          //naissance_dernier_enfant: null,
         },
       })
     }
