@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { page } from "../../config-yml/modules/ressources.yml";
 import { Layout } from "../components/Layout";
 import { useMutation } from "@apollo/client";
-import { client, EPDS_CONTACT_INFORMATION } from "../../apollo-client";
+import { client, EPDS_CONTACT_INFORMATION, SAVE_DEMANDE_DE_CONTACT } from "../../apollo-client";
 import { Spinner } from "react-bootstrap";
 
 const ressources = page;
@@ -92,6 +92,7 @@ export default function Ressources() {
       onCompleted: (data) => {
         setSendingMessage("La demande a été envoyée")
         setLoading(false)
+        saveContactRequest()
       },
       onError: (err) => {
         console.error(err)
@@ -99,6 +100,21 @@ export default function Ressources() {
         setLoading(false)
       },
     })
+
+    const [sendSaveDemandeContactQuery] = useMutation(SAVE_DEMANDE_DE_CONTACT, {
+      client: client,
+      onError: (err) => {
+        console.error(err)
+      },
+    })
+
+    const saveContactRequest = async () => {
+      await sendSaveDemandeContactQuery({
+        variables: {
+          widgetEpdsSource: SOURCE_NAME,
+        },
+      })
+    }
 
     const sendEmailOnClick = async () => {
       setSendingMessage("")
@@ -109,10 +125,8 @@ export default function Ressources() {
           prenom: `[${SOURCE_NAME}]`,
           email: emailValue,
           telephone: phoneNumberValue,
-          moyen: "sms",
-          horaires: "",
-          //nombre_enfants: null,
-          //naissance_dernier_enfant: null,
+          moyen: null,
+          horaires: null,
         },
       })
     }
