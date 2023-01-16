@@ -1,3 +1,10 @@
+## [1.10.2](https://github.com/SocialGouv/1000jours-blues/compare/v1.10.1...v1.10.2) (2023-01-16)
+
+
+### Bug Fixes
+
+* **ressources:** validité des inputs ([9e76afd](https://github.com/SocialGouv/1000jours-blues/commit/9e76afd90b8b5e07872dc3a58059d8bb76b89518))
+
 ## [1.10.1](https://github.com/SocialGouv/1000jours-blues/compare/v1.10.0...v1.10.1) (2023-01-16)
 
 
