@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { page } from "../../config-yml/modules/ressources.yml";
 import { Layout } from "../components/Layout";
 import { useMutation } from "@apollo/client";
-import { client, EPDS_CONTACT_INFORMATION } from "../../apollo-client";
+import { client, EPDS_CONTACT_INFORMATION, SAVE_DEMANDE_DE_CONTACT } from "../../apollo-client";
 import { Spinner } from "react-bootstrap";
 
 const ressources = page;
@@ -11,6 +11,7 @@ const ressources = page;
 export default function Ressources() {
   const PATTERN_EMAIL = "[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z.]{2,15}"
   const PATTERN_PHONE_NUMBER = "[0-9]{10}"
+  const SOURCE_NAME = "1000jblues-ressources"
 
   const classNameByIndex = (index) => `resources-item ${index > 0 ? "resources-item-border" : ""}`
 
@@ -91,6 +92,7 @@ export default function Ressources() {
       onCompleted: (data) => {
         setSendingMessage("La demande a été envoyée")
         setLoading(false)
+        saveContactRequest()
       },
       onError: (err) => {
         console.error(err)
@@ -99,15 +101,32 @@ export default function Ressources() {
       },
     })
 
+    const [sendSaveDemandeContactQuery] = useMutation(SAVE_DEMANDE_DE_CONTACT, {
+      client: client,
+      onError: (err) => {
+        console.error(err)
+      },
+    })
+
+    const saveContactRequest = async () => {
+      await sendSaveDemandeContactQuery({
+        variables: {
+          widgetEpdsSource: SOURCE_NAME,
+        },
+      })
+    }
+
     const sendEmailOnClick = async () => {
       setSendingMessage("")
       setLoading(true)
 
       await sendEmailContactQuery({
         variables: {
-          prenom: "",
+          prenom: `[${SOURCE_NAME}]`,
           email: emailValue,
           telephone: phoneNumberValue,
+          moyen: null,
+          horaires: null,
         },
       })
     }

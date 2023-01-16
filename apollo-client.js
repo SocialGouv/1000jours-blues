@@ -29,3 +29,26 @@ export const EPDS_CONTACT_INFORMATION = gql`
     )
   }
 `
+
+export const SAVE_DEMANDE_DE_CONTACT = gql`
+  mutation (
+    $typeDeContact: ENUM_DEMANDEDECONTACT_TYPE_DE_CONTACT
+    $widgetEpdsSource: ID
+    $reponsesEpds: ID
+  ) {
+    createDemandeDeContact(
+      input: {
+        data: {
+          type_de_contact: $typeDeContact
+          widget_epds_source: $widgetEpdsSource
+          reponses_epds: $reponsesEpds
+        }
+      }
+    ) {
+      demandeDeContact {
+        id
+        created_at
+      }
+    }
+  }
+`
