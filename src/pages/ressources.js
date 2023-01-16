@@ -75,12 +75,14 @@ export default function Ressources() {
     const [phoneNumberValue, setPhoneNumberValue] = useState("");
 
     const handleValidEmail = (event) => {
-      setEmailValid(event.currentTarget.validity.valid)
-      setEmailValue(event.currentTarget.value)
+      const emailTarger = event.currentTarget
+      setEmailValid(emailTarger.validity.valid && emailTarger.value.length > 0)
+      setEmailValue(emailTarger.value)
     }
     const handleValidPhone = (event) => {
-      setPhoneNumberValid(event.currentTarget.validity.valid)
-      setPhoneNumberValue(event.currentTarget.value)
+      const phoneTarger = event.currentTarget
+      setPhoneNumberValid(phoneTarger.validity.valid && phoneTarger.value.length > 0)
+      setPhoneNumberValue(phoneTarger.value)
     }
 
     useEffect(() => {
@@ -89,7 +91,7 @@ export default function Ressources() {
 
     const [sendEmailContactQuery] = useMutation(EPDS_CONTACT_INFORMATION, {
       client: client,
-      onCompleted: (data) => {
+      onCompleted: () => {
         setSendingMessage("La demande a été envoyée")
         setLoading(false)
         saveContactRequest()
