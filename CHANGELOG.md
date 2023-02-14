@@ -1,3 +1,10 @@
+## [1.10.3](https://github.com/SocialGouv/1000jours-blues/compare/v1.10.2...v1.10.3) (2023-02-14)
+
+
+### Bug Fixes
+
+* **legal-notice:** change legal notice, field 'Directeur de la publication ([cabc47a](https://github.com/SocialGouv/1000jours-blues/commit/cabc47aa8fe1b661ca8c686578b9c072e4c40960))
+
 ## [1.10.2](https://github.com/SocialGouv/1000jours-blues/compare/v1.10.1...v1.10.2) (2023-01-16)
 
 
