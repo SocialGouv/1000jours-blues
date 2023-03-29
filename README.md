@@ -84,3 +84,4 @@ Vous souhaitez créer/modifier module dans la landing page ? Quelle belle initia
 Afin que les autres projets puissent aussi en profiter, développez dans le sous-module git vers lequel pointe le dossier `/src`
 
 Vous trouverez toutes les indications dans le [README du repository landing-core](https://github.com/SocialGouv/landing-core).
+
