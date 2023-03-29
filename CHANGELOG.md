@@ -1,3 +1,10 @@
+## [1.10.4](https://github.com/SocialGouv/1000jours-blues/compare/v1.10.3...v1.10.4) (2023-03-29)
+
+
+### Bug Fixes
+
+* release ([7234b9b](https://github.com/SocialGouv/1000jours-blues/commit/7234b9b60afca4a8728c96e53e0374a51524abae))
+
 ## [1.10.3](https://github.com/SocialGouv/1000jours-blues/compare/v1.10.2...v1.10.3) (2023-02-14)
 
 
