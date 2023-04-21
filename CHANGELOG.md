@@ -1,3 +1,10 @@
+## [1.10.5](https://github.com/SocialGouv/1000jours-blues/compare/v1.10.4...v1.10.5) (2023-04-21)
+
+
+### Bug Fixes
+
+* **docker:** update base image ([#47](https://github.com/SocialGouv/1000jours-blues/issues/47)) ([30909f7](https://github.com/SocialGouv/1000jours-blues/commit/30909f71dc3b4c80b59e83cd835a0aa562804dec))
+
 ## [1.10.4](https://github.com/SocialGouv/1000jours-blues/compare/v1.10.3...v1.10.4) (2023-03-29)
 
 
