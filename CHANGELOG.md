@@ -1,3 +1,11 @@
+# [1.11.0](https://github.com/SocialGouv/1000jours-blues/compare/v1.10.5...v1.11.0) (2023-05-23)
+
+
+### Features
+
+* ci on kontinuous ([1d2d601](https://github.com/SocialGouv/1000jours-blues/commit/1d2d601ae4515f02dd09f8a66e2c58e0ee9ec7af))
+* ci on kontinuous ([a0f7bb7](https://github.com/SocialGouv/1000jours-blues/commit/a0f7bb74264ed4155e3e107a6f9400c523a3a208))
+
 ## [1.10.5](https://github.com/SocialGouv/1000jours-blues/compare/v1.10.4...v1.10.5) (2023-04-21)
 
 
