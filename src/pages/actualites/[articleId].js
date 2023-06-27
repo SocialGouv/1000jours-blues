@@ -44,6 +44,8 @@ function Article() {
           <div className="px-4 pb-4">
             <SpecialParagraph content={singleArticle.description} />
           </div>
+          {articleId !== "EPDS-landing-page" ? (
+            <>
           <img
             src={
               singleArticle.image &&
@@ -51,7 +53,7 @@ function Article() {
             }
             className="w-100 pb-4"
             alt="article-preview.jpg"
-          />
+            />
           <Col md={{ offset: 2, span: 8 }}>
             <div className="font-weight-bold pb-5" style={{ fontSize: "32px" }}>
               {singleArticle.title_content}
@@ -59,25 +61,34 @@ function Article() {
             <p className="content-article" style={{ whiteSpace: "pre-wrap" }}>
               {singleArticle.content}
             </p>
-
-            {articleId == "EPDS-site-partenaire" ? (
               <iframe
                 title="Widget EPDS"
                 src={widgetUrl}
                 width="100%"
                 height="700px"
                 style={{ border: "1px solid gray" }}
-              />
-            ) : null}
+                />
             <a
               href={singleArticle.button_url}
               target="_blank"
               rel="noreferrer"
               className="blue-btn mb-5 btn btn-primary"
-            >
+              >
               {singleArticle.button_text}
             </a>
           </Col>
+              </>
+          ) : null}
+          {articleId === "EPDS-landing-page" ? (
+          <iframe
+            title="Widget EPDS"
+            src={widgetUrl}
+            width="100%"
+            height="700px"
+            style={{ border: "1px solid gray" }}
+          />
+        ) : null}
+
         </Col>
       )}
     </Row>

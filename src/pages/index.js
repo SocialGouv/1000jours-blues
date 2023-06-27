@@ -1,6 +1,5 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
-import Slider from "react-slick";
+import { Col, Row } from "react-bootstrap";
 
 import header from "../../config-yml/commons/header.yml";
 import articles from "../../config-yml/modules/articles.yml";
@@ -94,8 +93,8 @@ function Partners() {
         className="d-flex justify-content-around w-100 align-items-center flex-wrap"
         style={{ flexDirection: "row" }}
       >
-        {partners.list.map((partner, index) => (
-          <Col key={index} className="col-3">
+        {partners.list.map((partner, idx) => (
+          <Col key={idx} className="col-3">
             <img
               width="100%"
               src={"../assets/imgs/partners/" + partner.image}
@@ -143,59 +142,27 @@ function SamplePrevArrow(props) {
 }
 
 function Articles() {
-  const settings = {
-    infinite: true,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          arrows: false,
-          slidesToShow:
-            articles.articles.length < 3 ? articles.articles.length : 3,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          arrows: false,
-          initialSlide: 2,
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          arrows: false,
-          slidesToShow: 1,
-        },
-      },
-    ],
-    slidesToScroll: 1,
-    slidesToShow: articles.articles.length < 3 ? articles.articles.length : 3,
-    speed: 500,
-  };
   return (
     articles.display && (
       <Row id="actualites" className="d-flex flex-column pb-5 no-gutters">
-        <Col>
-          <h2 className="py-5">{articles.title}</h2>
-        </Col>
-        <Container className="mb-5">
-          <Slider {...settings}>
-            {articles.articles.map((article, index) => (
+      <Col>
+        <h1 className="pb-4">{articles.title}</h1>
+        <div className="description">{articles.description}</div>
+        <Row className="flex-wrap pt-5">
+          {articles.articles.map((article, idx) => (
+            <Col md={4} key={idx} className="pb-4 no-gutters">
               <ArticleCard
                 title={article.title}
                 image={article.image}
                 description={article.description}
                 category={article.category}
                 slug={article.slug}
-                key={index}
+                key={idx}
               />
-            ))}
-          </Slider>
-        </Container>
+            </Col>
+          ))}
+        </Row>
+      </Col>
       </Row>
     )
   );
@@ -220,19 +187,4 @@ function Instagram({ posts }) {
       <InstagramPostList title={instagram.title} posts={posts} />
     )
   );
-}
-
-export async function getServerSideProps() {
-  const token = process.env.INSTAGRAM_TOKEN;
-  let getData = {};
-
-  if (token) {
-    const res = await fetch(
-      "https://graph.instagram.com/me/media?fields=id,username,permalink,media_url,thumbnail_url,media_type&access_token=" +
-      token
-    );
-    getData = await res.json();
-  }
-
-  return { props: { posts: getData.data ? getData.data.slice(0, 6) : [] } };
 }
