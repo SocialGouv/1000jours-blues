@@ -1,3 +1,17 @@
+# [1.12.0](https://github.com/SocialGouv/1000jours-blues/compare/v1.11.0...v1.12.0) (2023-06-27)
+
+
+### Bug Fixes
+
+* code smell ([e25b296](https://github.com/SocialGouv/1000jours-blues/commit/e25b2962f2dc14ade05748c8c4719f6463d160ca))
+* composent article size ([dbbe7f7](https://github.com/SocialGouv/1000jours-blues/commit/dbbe7f77c2143dd371495a63393d9820502ef15d))
+* remove comment ([2d8af14](https://github.com/SocialGouv/1000jours-blues/commit/2d8af14710d65d9dd91e9b7baa80f2738fa742a7))
+
+
+### Features
+
+* ajout de la carte pour l'epds ([b23bc20](https://github.com/SocialGouv/1000jours-blues/commit/b23bc20f8ac81bb96fc9dd6cf2ac6390c85999fa))
+
 # [1.11.0](https://github.com/SocialGouv/1000jours-blues/compare/v1.10.5...v1.11.0) (2023-05-23)
 
 
