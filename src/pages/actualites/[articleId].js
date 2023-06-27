@@ -94,13 +94,3 @@ function Article() {
     </Row>
   );
 }
-
-// {articleId == "EPDS-landing-page" ? (
-//   <iframe
-//     title="Widget EPDS"
-//     src={widgetUrl}
-//     width="100%"
-//     height="700px"
-//     style={{ border: "1px solid gray" }}
-//   />
-// ) : null}
