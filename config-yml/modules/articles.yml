@@ -25,6 +25,11 @@ articles:
     button_url: /integration-widget
     slug: EPDS-site-partenaire
 
+  - title: Vous êtes parents ou attendez un enfant ?
+    category: Widget
+    description: Testez vous en quelques clics et trouvez une aide adaptée
+    slug: EPDS-landing-page
+
   - title: Vous êtes professionnel de santé
     category: EPDS-pro
     description: Faites passer plus facilement vos tests EPDS à vos patient(e)s directement depuis un téléphone mobile ou un ordinateur portable. Consultez et partagez les résultats en deux clics.

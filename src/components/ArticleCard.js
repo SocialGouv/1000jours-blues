@@ -1,12 +1,10 @@
 import Link from "next/link";
 import React from "react";
-import { Col, Image } from "react-bootstrap";
 
 export function ArticleCard({ title, image, description, category, slug }) {
   return (
-    <Col className="w-500">
-
-      <div style={{ background: "var(--beige)", padding: "30px" }}>
+    <div className="col-container">
+      <div className="col" style={{ background: "var(--beige)", padding: "30px" }}>
         <div style={{ fontSize: "12px", color: "var(--black)" }}>
           {category}
         </div>
@@ -20,6 +18,6 @@ export function ArticleCard({ title, image, description, category, slug }) {
           </button>
         </Link>
       </div>
-    </Col>
+    </div>
   );
 }
