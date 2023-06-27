@@ -8,6 +8,7 @@ import instagram from "../../config-yml/modules/instagram.yml";
 import newsletter from "../../config-yml/modules/newsletter.yml";
 import onboarding from "../../config-yml/modules/onboarding.yml";
 import partners from "../../config-yml/modules/partners.yml";
+import article from "../../config-yml/modules/articles.yml";
 import { home } from "../../config-yml/modules/stats.yml";
 import { ArticleCard } from "../components/ArticleCard";
 import { Header } from "../components/Header";
@@ -179,12 +180,12 @@ function Articles() {
   return (
     articles.display && (
       <Row id="actualites" className="d-flex flex-column pb-5 no-gutters">
-        <Col>
-          <h2 className="py-5">{articles.title}</h2>
-        </Col>
-        <Container className="mb-5">
-          <Slider {...settings}>
-            {articles.articles.map((article, index) => (
+      <Col>
+        <h1 className="pb-4">{article.title}</h1>
+        <div className="description">{article.description}</div>
+        <Row className="flex-wrap pt-5">
+          {article.articles.map((article, index) => (
+            <Col md={4} key={index} className="pb-4 no-gutters">
               <ArticleCard
                 title={article.title}
                 image={article.image}
@@ -193,9 +194,10 @@ function Articles() {
                 slug={article.slug}
                 key={index}
               />
-            ))}
-          </Slider>
-        </Container>
+            </Col>
+          ))}
+        </Row>
+      </Col>
       </Row>
     )
   );
@@ -220,19 +222,4 @@ function Instagram({ posts }) {
       <InstagramPostList title={instagram.title} posts={posts} />
     )
   );
-}
-
-export async function getServerSideProps() {
-  const token = process.env.INSTAGRAM_TOKEN;
-  let getData = {};
-
-  if (token) {
-    const res = await fetch(
-      "https://graph.instagram.com/me/media?fields=id,username,permalink,media_url,thumbnail_url,media_type&access_token=" +
-      token
-    );
-    getData = await res.json();
-  }
-
-  return { props: { posts: getData.data ? getData.data.slice(0, 6) : [] } };
 }
