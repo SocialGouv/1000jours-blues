@@ -1,6 +1,5 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
-import Slider from "react-slick";
+import { Col, Row } from "react-bootstrap";
 
 import header from "../../config-yml/commons/header.yml";
 import articles from "../../config-yml/modules/articles.yml";
@@ -8,7 +7,6 @@ import instagram from "../../config-yml/modules/instagram.yml";
 import newsletter from "../../config-yml/modules/newsletter.yml";
 import onboarding from "../../config-yml/modules/onboarding.yml";
 import partners from "../../config-yml/modules/partners.yml";
-import article from "../../config-yml/modules/articles.yml";
 import { home } from "../../config-yml/modules/stats.yml";
 import { ArticleCard } from "../components/ArticleCard";
 import { Header } from "../components/Header";
@@ -95,8 +93,8 @@ function Partners() {
         className="d-flex justify-content-around w-100 align-items-center flex-wrap"
         style={{ flexDirection: "row" }}
       >
-        {partners.list.map((partner, index) => (
-          <Col key={index} className="col-3">
+        {partners.list.map((partner, idx) => (
+          <Col key={idx} className="col-3">
             <img
               width="100%"
               src={"../assets/imgs/partners/" + partner.image}
@@ -144,55 +142,22 @@ function SamplePrevArrow(props) {
 }
 
 function Articles() {
-  const settings = {
-    infinite: true,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          arrows: false,
-          slidesToShow:
-            articles.articles.length < 3 ? articles.articles.length : 3,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          arrows: false,
-          initialSlide: 2,
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          arrows: false,
-          slidesToShow: 1,
-        },
-      },
-    ],
-    slidesToScroll: 1,
-    slidesToShow: articles.articles.length < 3 ? articles.articles.length : 3,
-    speed: 500,
-  };
   return (
     articles.display && (
       <Row id="actualites" className="d-flex flex-column pb-5 no-gutters">
       <Col>
-        <h1 className="pb-4">{article.title}</h1>
-        <div className="description">{article.description}</div>
+        <h1 className="pb-4">{articles.title}</h1>
+        <div className="description">{articles.description}</div>
         <Row className="flex-wrap pt-5">
-          {article.articles.map((article, index) => (
-            <Col md={4} key={index} className="pb-4 no-gutters">
+          {articles.articles.map((article, idx) => (
+            <Col md={4} key={idx} className="pb-4 no-gutters">
               <ArticleCard
                 title={article.title}
                 image={article.image}
                 description={article.description}
                 category={article.category}
                 slug={article.slug}
-                key={index}
+                key={idx}
               />
             </Col>
           ))}
