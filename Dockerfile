@@ -7,6 +7,7 @@ RUN apk add --no-cache libc6-compat
 WORKDIR /app
 COPY yarn.lock .yarnrc.yml ./
 COPY .yarn .yarn
+ENV YARN_IGNORE_NODE 1
 RUN yarn fetch --immutable
 
 # Rebuild the source code only when needed
@@ -45,5 +46,5 @@ USER 1001
 EXPOSE 3000
 
 ENV NEXT_TELEMETRY_DISABLED 1
-
+ENV YARN_IGNORE_NODE 1
 CMD ["yarn", "start"]
