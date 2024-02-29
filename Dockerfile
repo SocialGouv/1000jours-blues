@@ -1,4 +1,4 @@
-ARG NODE_VERSION="16-alpine@sha256:710a2c192ca426e03e4f3ec1869e5c29db855eb6969b74e6c50fd270ffccd3f1"
+ARG NODE_VERSION="16-alpine@sha256:72e89a86be58c922ed7b1475e5e6f151537676470695dd106521738b060e139d"
 
 # Install dependencies only when needed
 FROM node:${NODE_VERSION} AS deps
