@@ -1,140 +1,224 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
-
-import PrivacyPolicy from "../../config-yml/legals/politique-confidentialite.yml";
 import { Layout } from "../components/Layout";
 
 export default function privacyPolicy() {
   return (
     <Layout>
       <br />
-      <PolitiqueConfidentialite />
+      <h2>Qui est responsable de Nos 1000 premiers jours ?</h2>
+      <p>
+        Le service numérique « Nos 1000 premiers jours » est à l’initiative de
+        la Direction générale de la cohésion sociale au sein de la Fabrique
+        numérique des ministères sociaux.
+      </p>
+
+      <h3>Pourquoi traitons-nous des données à caractère personnel ?</h3>
+      <p>
+        Nos 1000 premiers jours traite des données à caractère personnel pour
+        les raisons suivantes :
+      </p>
+      <ul>
+        <li>
+          Visualiser dans le territoire de vie du parent, les services, les
+          interlocuteurs et les structures pouvant aider les parents ;
+        </li>
+        <li>
+          Informer les parents et les futurs parents selon leur parcours
+          parental et l’âge de l’enfant ;
+        </li>
+        <li>
+          Permettre une évaluation de l’état des parents pendant les 1000
+          premiers jours.
+        </li>
+      </ul>
+
+      <h3>
+        Quelles sont les données à caractère personnel que nous traitons ?
+      </h3>
+      <p>Nos 1000 premiers jours traite les données suivantes : </p>
+      <ul>
+        <li>Données relatives aux parents : adresse e-mail ;</li>
+        <li>Données relatives aux professionnels de santé : adresse e-mail.</li>
+        <li>Données relatives au questionnaire.</li>
+      </ul>
+
+      <h3>
+        Qu’est-ce qui nous autorise à traiter des données à caractère personnel
+        ?
+      </h3>
+      <p>
+      Nos 1000 premiers jours traite des données à caractère personnel en se basant sur : 
+      </p>
+      <ul>
+        <li>
+          L’exécution d’une mission d’intérêt public ou relevant de l’exercice
+          de l’autorité publique dont est investi le responsable de traitement
+          au sens de l’article 6-1 e) du RGPD.
+        </li>
+      </ul>
+
+      <h3>Pendant combien de temps conservons-nous ces données ?</h3>
+      <p>
+        Les données relatives aux parents sont conservées à compter de l’utilisation du droit d’opposition lors du contact par mail ou 1 an à compter de la réalisation du questionnaire
+      </p>
+      <p>
+        Les données relatives aux professionnels de santé à compter de l’utilisation du droit d’opposition lors du contact par mail ou 1 an à compter de la réalisation du questionnaire
+      </p>
+
+      <h3>Quels sont vos droits ?</h3>
+      <p>Vous disposez :</p>
+      <ul>
+        <li>D’un droit d’information et droit d’accès ;</li>
+        <li>D’un droit de rectification ;</li>
+        <li>D’un droit d’opposition ;</li>
+        <li>D’un droit à la limitation du traitement.</li>
+      </ul>
+      <p>
+        Pour les exercer, contactez-nous par voie électronique :{" "}
+        <a href="mailto:contact-nos1000jours@fabrique.social.gouv.fr">
+          contact-nos1000jours@fabrique.social.gouv.fr
+        </a>
+      </p>
+      <p>Par voie postale : </p>
+      <ul>
+        <li>Direction du Numérique des ministères sociaux</li>
+        <li>Ministère des solidarités et de la santé</li>
+        <li>39-43 Quai André Citroën</li>
+        <li>75015 Paris</li>
+      </ul>
+
+      <p>
+        Puisque ce sont des droits personnels, nous ne traiterons votre demande
+        que si nous sommes en mesure de vous identifier. Dans le cas où nous ne
+        parvenons pas à vous identifier, nous pouvons être amenés à vous
+        demander une preuve de votre identité.
+      </p>
+      <p>
+        Pour vous aider dans votre démarche, vous trouverez un modèle de
+        courrier élaboré par la CNIL ici :{" "}
+        <a href="https://www.cnil.fr/fr/modele/courrier/exercer-son-droit-dacces">
+          https://www.cnil.fr/fr/modele/courrier/exercer-son-droit-dacces
+        </a>
+      </p>
+      <p>
+        Nous nous engageons à vous répondre dans un délai raisonnable qui ne
+        saurait dépasser 1 mois à compter de la réception de votre demande.
+      </p>
+
+      <h3>Qui va avoir accès à ces données ?</h3>
+      <p>
+        Les accès aux données sont strictement encadrés et juridiquement
+        justifiés. Les personnes suivantes vont avoir accès aux données :
+      </p>
+      <ul>
+        <li>
+          Les usagers et professionnels de santé choisis par les usagers et
+          suivis par eux.
+        </li>
+      </ul>
+
+      <h3>Quelles mesures de sécurité mettons-nous en place ?</h3>
+      <p>
+        Nous mettons en place plusieurs mesures pour sécuriser les données :
+      </p>
+      <ul>
+        <li>Stockage des données en base de données ;</li>
+        <li>Cloisonnement des données ;</li>
+        <li>Mesures de traçabilité ;</li>
+        <li>Surveillance ;</li>
+        <li>Protection contre les virus, malwares et logiciels espions ;</li>
+        <li>Protection des réseaux ;</li>
+        <li>Sauvegarde ;</li>
+        <li>
+          Mesures restrictives limitant l’accès physique aux données à caractère
+          personnel.
+        </li>
+      </ul>
+
+      <h3>Qui nous aide à traiter les données à caractère personnel ?</h3>
+      <ul>
+        <li>Sous-traitant : OVH</li>
+        <li>Pays destinataire : France</li>
+        <li>Traitement réalisé : Hébergement</li>
+        <li>
+          Garanties :
+          <a href="https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/9e74492-OVH_Data_Protection_Agreement-FR-6.0.pdf">
+            https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/9e74492-OVH_Data_Protection_Agreement-FR-6.0.pdf
+          </a>
+        </li>
+      </ul>
+
+      <h3>Cookies</h3>
+      <p>
+        Un cookie est un fichier déposé sur votre terminal lors de la visite
+        d’un site. Il a pour but de collecter des informations relatives à votre
+        navigation et de vous adresser des services adaptés à votre terminal
+        (ordinateur, mobile ou tablette).
+      </p>
+      <p>
+        En application de l’article 5(3) de la directive 2002/58/CE modifiée
+        concernant le traitement des données à caractère personnel et la
+        protection de la vie privée dans le secteur des communications
+        électroniques, transposée à l’article 82 de la loi n° 78-17 du 6 janvier
+        1978 relative à l’informatique, aux fichiers et aux libertés, les
+        traceurs ou cookies suivent deux régimes distincts.
+      </p>
+      <p>
+        Les cookies strictement nécessaires au service ou ayant pour finalité
+        exclusive de faciliter la communication par voie électronique sont
+        dispensés de consentement préalable au titre de l’article 82 de la loi
+        n° 78-17 du 6 janvier 1978.
+      </p>
+      <p>
+        Les cookies n’étant pas strictement nécessaires au service ou n’ayant
+        pas pour finalité exclusive de faciliter la communication par voie
+        électronique doivent être consenti par l’utilisateur.
+      </p>
+      <p>
+        Ce consentement de la personne concernée pour une ou plusieurs finalités
+        spécifiques constitue une base légale au sens du RGPD et doit être
+        entendu au sens de l'article 6-a du Règlement (UE) 2016/679 du Parlement
+        européen et du Conseil du 27 avril 2016 relatif à la protection des
+        personnes physiques à l'égard du traitement des données à caractère
+        personnel et à la libre circulation de ces données.
+      </p>
+      <p>
+        À tout moment, vous pouvez refuser l’utilisation des cookies et
+        désactiver le dépôt sur votre ordinateur en utilisant la fonction dédiée
+        de votre navigateur (fonction disponible notamment sur Microsoft
+        Internet Explorer 11, Google Chrome, Mozilla Firefox, Apple Safari et
+        Opera).
+      </p>
+      <p>
+        Pour aller plus loin, vous pouvez consulter les fiches proposées par la
+        Commission Nationale de l'Informatique et des Libertés (CNIL) :
+      </p>
+      <ul>
+        <li>
+          <a href="https://www.cnil.fr/fr/cookies-et-autres-traceurs/regles/cookies/que-dit-la-loi">
+            Cookies & traceurs : que dit la loi ?
+          </a>
+        </li>
+        <li>
+          <a href="https://www.cnil.fr/fr/cookies-et-autres-traceurs/comment-se-proteger/maitriser-votre-navigateur">
+            Cookies : les outils pour les maîtriser
+          </a>
+        </li>
+      </ul>
+      <p>
+        Nous utilisons Matomo, une solution de mesure d’audience, configuré en
+        “mode exempté” ne nécessitant pas le recueil du consentement des
+        utilisateurs conformément aux recommandations de la CNIL.
+      </p>
+
+      <p>
+        <iframe
+          title="matomo optout"
+          style={{ border: 0, width: "100%" }}
+          src="https://matomo.fabrique.social.gouv.fr/index.php?module=CoreAdminHome&action=optOut&language=fr&backgroundColor=&fontColor=2f3b6c&fontSize=16px&fontFamily=sans-serif"
+        />
+      </p>
       <br />
     </Layout>
-  );
-}
-
-function SousTraitsTab() {
-  return (
-    <div style={{ overflowX: "auto" }}>
-      <table className="table table-bordered">
-        <thead>
-          <tr>
-            <th>Partenaire</th>
-            <th>Pays destinataire</th>
-            <th>Traitement réalisé</th>
-            <th>Garanties</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Microsoft Azure</td>
-            <td>France</td>
-            <td>Hébergement</td>
-            <td>
-              <a href="https://privacy.microsoft.com/fr-fr/privacystatement">
-                https://privacy.microsoft.com/fr-fr/privacystatement
-              </a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  );
-}
-
-function DureeConservationTab() {
-  return (
-    <div style={{ overflowX: "auto" }}>
-      <table className="table table-bordered">
-        <thead>
-          <tr>
-            <th>Types de données</th>
-            <th>Durée de conservation</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Données relatives au questionnaire</td>
-            <td>
-              à compter de l’utilisation du droit d’opposition lors du contact
-              par mail ou <strong>1 an</strong>, à compter de la réalisation du
-              questionnaire.
-            </td>
-          </tr>
-          <tr>
-            <td>Données d’hébergeur</td>
-            <td>
-              <strong>1 an</strong>, conformément au décret n°2011-219 du 25
-              février 2011.
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  );
-}
-
-function CookiesTab() {
-  return (
-    <>
-      <br />
-      <iframe
-        title="matomo optout"
-        style={{ border: 0, width: "100%" }}
-        src="https://matomo.fabrique.social.gouv.fr/index.php?module=CoreAdminHome&action=optOut&language=fr&backgroundColor=&fontColor=2f3b6c&fontSize=16px&fontFamily=sans-serif"
-      />
-      À tout moment, vous pouvez refuser l’utilisation des cookies et désactiver
-      le dépôt sur votre ordinateur en utilisant la fonction dédiée de votre
-      navigateur (fonction disponible notamment sur Microsoft Internet Explorer
-      11, Google Chrome, Mozilla Firefox, Apple Safari et Opera).
-      <br />
-      <br />
-      Pour aller plus loin, vous pouvez consulter les fiches proposées par la
-      Commission Nationale de l’Informatique et des Libertés (CNIL) :
-      <br />
-      <a href="https://www.cnil.fr/fr/cookies-traceurs-que-dit-la-loi">
-        - Cookies &amp; traceurs : que dit la loi ?
-      </a>
-      <br />
-      <a href="https://www.cnil.fr/fr/cookies-les-outils-pour-les-maitriser">
-        - Cookies : les outils pour les maîtriser
-      </a>
-    </>
-  );
-}
-
-function showTabByName(name) {
-  switch (name) {
-    case "cookies":
-      return <CookiesTab />;
-    case "duree_conservation":
-      return <DureeConservationTab />;
-    case "sous_traitants":
-      return <SousTraitsTab />;
-    default:
-      return null;
-  }
-}
-
-function PolitiqueConfidentialite() {
-  return (
-    <Row>
-      <Col className="no-gutters">
-        <h1 className="py-5">{PrivacyPolicy.title}</h1>
-        {PrivacyPolicy.privacy_policy.map((notice, index) => (
-          <Col
-            key={index}
-            className="w-100 no-gutters justify-content-between align-items-center pb-5"
-          >
-            <h2>{notice.title}</h2>
-            <div style={{ whiteSpace: "pre-wrap" }}>
-              {notice.content}
-              {showTabByName(notice.table_name)}
-            </div>
-          </Col>
-        ))}
-      </Col>
-    </Row>
   );
 }
