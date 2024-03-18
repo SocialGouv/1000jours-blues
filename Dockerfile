@@ -8,7 +8,7 @@ WORKDIR /app
 COPY yarn.lock .yarnrc.yml ./
 COPY .yarn .yarn
 ENV YARN_IGNORE_NODE 1
-RUN yarn fetch --immutable
+RUN yarn fetch
 
 # Rebuild the source code only when needed
 FROM node:${NODE_VERSION} AS builder
