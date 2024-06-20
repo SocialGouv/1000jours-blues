@@ -7,7 +7,7 @@
   "repository": "",
   "dependencies": {
     "@apollo/client": "^3.7.3",
-    "@dataesr/react-dsfr": "^2.9.2",
+    "@dataesr/react-dsfr": "^3.0.0",
     "@gouvfr/dsfr": "^1.8.5",
     "@socialgouv/matomo-next": "^1.2.2",
     "axios": "^1.0.0",
