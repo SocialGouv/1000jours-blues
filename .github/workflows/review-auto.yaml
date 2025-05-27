@@ -11,7 +11,7 @@ concurrency:
 
 jobs:
   build-app:
-    environment: review-auto
+    environment: build-review-auto
     outputs:
       tags: ${{ steps.meta.outputs.tags }}
     runs-on: ubuntu-latest
