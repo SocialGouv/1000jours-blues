@@ -25,7 +25,7 @@ export function Nav() {
             height="100%"
           />
         </a>
-        <Navbar.Collapse
+        {/* <Navbar.Collapse
           id="responsive-navbar-nav"
           className="justify-content-end"
         >
@@ -47,7 +47,7 @@ export function Nav() {
               {nav.contact}
             </a>
           </BSNav>
-        </Navbar.Collapse>
+        </Navbar.Collapse> */}
       </Container>
     </Navbar>
   );
