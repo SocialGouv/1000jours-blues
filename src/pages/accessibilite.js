@@ -43,7 +43,7 @@ const generatedStatement = () => {
 
     {/* <h2>Contenus non accessibles</h2> */}
 
-    <h2>Amélioration et contact</h2>
+    {/* <h2>Amélioration et contact</h2>
     <p>Si vous n’arrivez pas à accéder à un contenu ou à un service, vous pouvez contacter le responsable de nos1000jours-blues pour être orienté vers une alternative accessible ou obtenir le contenu sous une autre forme.</p>
     <ul>
       <li>
@@ -53,7 +53,7 @@ const generatedStatement = () => {
     <p>
       Nous essayons de répondre dans les 2 jours ouvrés.
     </p>
-    <br />
+    <br /> */}
 
     <h2>Voie de recours</h2>
     <p>Cette procédure est à utiliser dans le cas suivant : vous avez signalé au responsable du site internet un défaut d’accessibilité qui vous empêche d’accéder à un contenu ou à un des services du portail et vous n’avez pas obtenu de réponse satisfaisante.</p>
