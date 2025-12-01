@@ -77,6 +77,9 @@ importers:
       styled-components:
         specifier: ^5.3.3
         version: 5.3.11(@babel/core@7.24.0)(react-dom@17.0.2(react@17.0.2))(react-is@17.0.2)(react@17.0.2)
+      styled-jsx:
+        specifier: 3.3.2
+        version: 3.3.2(react@17.0.2)
     devDependencies:
       eslint:
         specifier: ^8.57.0
