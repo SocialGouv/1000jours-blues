@@ -7,7 +7,7 @@ RUN apk add --no-cache libc6-compat
 WORKDIR /app
 
 # Enable pnpm via corepack and pin pnpm 10.x
-RUN corepack enable && corepack prepare pnpm@10.0.0 --activate
+RUN corepack enable && corepack prepare pnpm@10.24.0 --activate
 
 # Copy only the lockfile and npm config needed for dependency resolution
 # Keeping package.json out of this stage ensures cache invalidation only
@@ -29,7 +29,7 @@ ARG NEXT_PUBLIC_API_URL
 ENV NEXT_PUBLIC_API_URL=$NEXT_PUBLIC_API_URL
 
 # Enable pnpm in the builder as well
-RUN corepack enable && corepack prepare pnpm@10.0.0 --activate
+RUN corepack enable && corepack prepare pnpm@10.24.0 --activate
 
 # Copy manifests and reuse the cached pnpm store from the deps stage
 COPY package.json pnpm-lock.yaml .npmrc ./
