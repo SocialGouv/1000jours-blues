@@ -69,7 +69,5 @@ EXPOSE 3000
 
 ENV NEXT_TELEMETRY_DISABLED 1
 
-# Enable pnpm via corepack in the runtime image
-RUN corepack enable && corepack prepare pnpm@10.0.0 --activate
-
-CMD ["pnpm", "start"]
+# Run Next.js in production without needing pnpm/corepack in the runtime image
+CMD ["node", "node_modules/next/dist/bin/next", "start"]
