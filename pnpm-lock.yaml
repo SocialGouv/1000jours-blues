@@ -44,6 +44,9 @@ importers:
       nextjs-breadcrumbs:
         specifier: ^1.1.9
         version: 1.1.9(next@10.2.3(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(sass@1.71.1))(react@17.0.2)
+      prop-types:
+        specifier: ^15.8.1
+        version: 15.8.1
       react:
         specifier: ^17.0.2
         version: 17.0.2
