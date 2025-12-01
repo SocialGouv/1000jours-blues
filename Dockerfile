@@ -40,6 +40,11 @@ RUN pnpm install --frozen-lockfile --offline
 
 # Now copy the full source and build
 COPY . .
+
+# Workaround for Node 24 + webpack 4 OpenSSL 3 issue (ERR_OSSL_EVP_UNSUPPORTED)
+# This enables the legacy OpenSSL provider during the build.
+ENV NODE_OPTIONS=--openssl-legacy-provider
+
 RUN pnpm build
 
 # Production image, copy all the files and run next
