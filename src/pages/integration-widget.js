@@ -94,12 +94,12 @@ function IntegrationWidget() {
           />
         </div>
 
-        <Col md={{ offset: 2, span: 8 }}>
+        {/* <Col md={{ offset: 2, span: 8 }}>
           <p className="content-article" style={{ whiteSpace: "pre-wrap" }}>
             <br />
             {Labels.contact} : {Labels.email_contact}
           </p>
-        </Col>
+        </Col> */}
       </Col>
     </Row>
   );

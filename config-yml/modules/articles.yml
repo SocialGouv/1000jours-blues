@@ -20,7 +20,7 @@ articles:
       Ce service, proposé par le ministère de la santé, est gratuit.
 
 
-      Pour mettre en place le widget sur votre site internet, contactez nous à l'adresse mail suivante : contact-nos1000jours@fabrique.social.gouv.fr
+      # Pour mettre en place le widget sur votre site internet, contactez nous à l'adresse mail suivante : contact-nos1000jours@fabrique.social.gouv.fr
     button_text: Comment intégrer l'outil dans mon site ?
     button_url: /integration-widget
     slug: EPDS-site-partenaire
@@ -45,7 +45,7 @@ articles:
       Le service vous permet aussi de proposer de passer le test dans des langues étrangères.
 
 
-      Contactez nous pour une démonstration à l'adresse mail suivante : contact-nos1000jours@fabrique.social.gouv.fr
+      # Contactez nous pour une démonstration à l'adresse mail suivante : contact-nos1000jours@fabrique.social.gouv.fr
     button_text: Utiliser l'outil dès maintenant
     button_url: https://nos1000jours-web-pro.fabrique.social.gouv.fr/
     slug: EPDS-pro
