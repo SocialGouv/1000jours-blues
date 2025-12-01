@@ -1,6 +1,10 @@
 {
   "name": "1000jours-blues",
   "version": "1.12.0",
+  "engines": {
+    "node": ">=24",
+    "pnpm": ">=10"
+  },
   "main": "index.js",
   "license": "MIT",
   "private": true,
@@ -35,7 +39,7 @@
     "build": "next build",
     "export": "next export",
     "lint": "eslint src/pages/*.js",
-    "k8s": "yarn --silent --cwd .k8s",
+    "k8s": "pnpm install --dir .k8s",
     "test": "exit 0"
   },
   "devDependencies": {
@@ -54,5 +58,5 @@
       "@socialgouv/eslint-config-react"
     ]
   },
-  "packageManager": "yarn@3.7.0"
+  "packageManager": "pnpm@10.0.0"
 }
