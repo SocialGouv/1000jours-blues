@@ -8,8 +8,8 @@ TIPS: ce repo contient un sous-module, pour cloner simplement :
 
 **Lancer le projet**
 ```sh
-yarn
-yarn dev
+pnpm install
+pnpm dev
 ```
 ## Modifier vos contenus
 
