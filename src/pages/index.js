@@ -9,6 +9,7 @@ import onboarding from "../../config-yml/modules/onboarding.yml";
 import partners from "../../config-yml/modules/partners.yml";
 import { home } from "../../config-yml/modules/stats.yml";
 import { ArticleCard } from "../components/ArticleCard";
+import { ClosureNotice } from "../components/ClosureNotice";
 import { Header } from "../components/Header";
 import InstagramPostList from "../components/InstagramPostList";
 import { Layout } from "../components/Layout";
@@ -20,6 +21,7 @@ const stats = home;
 export default function index({ posts }) {
   return (
     <Layout>
+      <ClosureNotice />
       <br />
       <MainHeader />
       <br />
